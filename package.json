@@ -1,0 +1,14 @@
+{
+  "name": "event",
+  "version": "1.0.0",
+  "description": "connect people together",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tega Oboraruvwe",
+  "license": "MIT",
+  "repository": {
+    "git":"https://github.com/tryrone/events.git"
+  }
+}
