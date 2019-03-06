@@ -9,6 +9,9 @@
   "author": "Tega Oboraruvwe",
   "license": "MIT",
   "repository": {
-    "git":"https://github.com/tryrone/events.git"
+    "git": "https://github.com/tryrone/events.git"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
