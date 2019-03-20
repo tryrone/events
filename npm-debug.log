@@ -1,0 +1,1907 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'packagename',
+1 verbose cli   '--save' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData packagename
+8 silly fetchNamedPackageData packagename
+9 silly mapToRegistry name packagename
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/packagename
+13 verbose request uri https://registry.npmjs.org/packagename
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 9:07:15 PM
+16 verbose request id 39eff0cb9fbb622d
+17 verbose etag W/"221b9475d3ff4a898ae19dab9361efc4"
+18 verbose lastModified Sun, 27 May 2018 11:43:01 GMT
+19 http request GET https://registry.npmjs.org/packagename
+20 http 304 https://registry.npmjs.org/packagename
+21 verbose headers { date: 'Wed, 20 Mar 2019 20:07:16 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'set-cookie':
+21 verbose headers    [ '__cfduid=db09391aec83629a563d480310d2db3881553112436; expires=Thu, 19-Mar-20 20:07:16 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+21 verbose headers   'cf-cache-status': 'HIT',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'cf-ray': '4baa4fb6eddcbbb4-LHR',
+21 verbose headers   etag: '"221b9475d3ff4a898ae19dab9361efc4"',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   'last-modified': 'Sun, 27 May 2018 11:43:01 GMT',
+21 verbose headers   vary: 'accept-encoding, accept',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Wed, 20 Mar 2019 20:07:16 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'set-cookie':
+22 silly get      [ '__cfduid=db09391aec83629a563d480310d2db3881553112436; expires=Thu, 19-Mar-20 20:07:16 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 silly get     'cf-cache-status': 'HIT',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'cf-ray': '4baa4fb6eddcbbb4-LHR',
+22 silly get     etag: '"221b9475d3ff4a898ae19dab9361efc4"',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'last-modified': 'Sun, 27 May 2018 11:43:01 GMT',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/packagename from cache
+24 verbose get saving packagename to /home/tega/.npm/registry.npmjs.org/packagename/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule packagename@2.0.1 checking installable status
+38 silly cache add args [ 'packagename', null ]
+39 verbose cache add spec packagename
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'packagename',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'packagename',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed packagename@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for packagename
+43 info addNameTag [ 'packagename', 'latest' ]
+44 silly mapToRegistry name packagename
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/packagename
+48 verbose addNameTag registry:https://registry.npmjs.org/packagename not in flight; fetching
+49 verbose get https://registry.npmjs.org/packagename not expired, no request
+50 silly addNameTag next cb for packagename with tag latest
+51 silly addNamed packagename@2.0.1
+52 verbose addNamed "2.0.1" is a plain semver version for packagename
+53 silly cache afterAdd packagename@2.0.1
+54 verbose afterAdd /home/tega/.npm/packagename/2.0.1/package/package.json not in flight; writing
+55 verbose afterAdd /home/tega/.npm/packagename/2.0.1/package/package.json written
+56 silly fetchNamedPackageData fsevents
+57 silly mapToRegistry name fsevents
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+61 verbose request uri https://registry.npmjs.org/fsevents
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 9:07:16 PM
+64 verbose etag W/"7533030983647eebbf62981bebdd6312"
+65 verbose lastModified Wed, 20 Mar 2019 13:13:06 GMT
+66 http request GET https://registry.npmjs.org/fsevents
+67 http 304 https://registry.npmjs.org/fsevents
+68 verbose headers { date: 'Wed, 20 Mar 2019 20:07:16 GMT',
+68 verbose headers   connection: 'keep-alive',
+68 verbose headers   'set-cookie':
+68 verbose headers    [ '__cfduid=db09391aec83629a563d480310d2db3881553112436; expires=Thu, 19-Mar-20 20:07:16 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+68 verbose headers   'cf-cache-status': 'HIT',
+68 verbose headers   'cache-control': 'max-age=300',
+68 verbose headers   'cf-ray': '4baa4fbb2922bbb4-LHR',
+68 verbose headers   etag: '"7533030983647eebbf62981bebdd6312"',
+68 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+68 verbose headers   'last-modified': 'Wed, 20 Mar 2019 13:13:06 GMT',
+68 verbose headers   vary: 'accept-encoding, accept',
+68 verbose headers   'x-amz-meta-rev': '99-c2d6556d6f404767910e76cf8392bff2',
+68 verbose headers   server: 'cloudflare' }
+69 silly get cb [ 304,
+69 silly get   { date: 'Wed, 20 Mar 2019 20:07:16 GMT',
+69 silly get     connection: 'keep-alive',
+69 silly get     'set-cookie':
+69 silly get      [ '__cfduid=db09391aec83629a563d480310d2db3881553112436; expires=Thu, 19-Mar-20 20:07:16 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+69 silly get     'cf-cache-status': 'HIT',
+69 silly get     'cache-control': 'max-age=300',
+69 silly get     'cf-ray': '4baa4fbb2922bbb4-LHR',
+69 silly get     etag: '"7533030983647eebbf62981bebdd6312"',
+69 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+69 silly get     'last-modified': 'Wed, 20 Mar 2019 13:13:06 GMT',
+69 silly get     vary: 'accept-encoding, accept',
+69 silly get     'x-amz-meta-rev': '99-c2d6556d6f404767910e76cf8392bff2',
+69 silly get     server: 'cloudflare' } ]
+70 verbose etag https://registry.npmjs.org/fsevents from cache
+71 verbose get saving fsevents to /home/tega/.npm/registry.npmjs.org/fsevents/.cache.json
+72 silly resolveWithNewModule fsevents@1.2.7 checking installable status
+73 silly loadAllDepsIntoIdealTree Finishing
+74 silly idealTree:prePrune event@1.0.0
+74 silly idealTree:prePrune ├── abbrev@1.1.1
+74 silly idealTree:prePrune ├── accepts@1.3.5
+74 silly idealTree:prePrune ├── ansi-align@2.0.0
+74 silly idealTree:prePrune ├── ansi-regex@3.0.0
+74 silly idealTree:prePrune ├── ansi-styles@3.2.1
+74 silly idealTree:prePrune ├─┬ anymatch@2.0.0
+74 silly idealTree:prePrune │ └── normalize-path@2.1.1
+74 silly idealTree:prePrune ├── arr-diff@4.0.0
+74 silly idealTree:prePrune ├── arr-flatten@1.1.0
+74 silly idealTree:prePrune ├── arr-union@3.1.0
+74 silly idealTree:prePrune ├── array-flatten@1.1.1
+74 silly idealTree:prePrune ├── array-unique@0.3.2
+74 silly idealTree:prePrune ├── assign-symbols@1.0.0
+74 silly idealTree:prePrune ├── async-each@1.0.1
+74 silly idealTree:prePrune ├── async@2.6.1
+74 silly idealTree:prePrune ├── atob@2.1.2
+74 silly idealTree:prePrune ├── balanced-match@1.0.0
+74 silly idealTree:prePrune ├─┬ base@0.11.2
+74 silly idealTree:prePrune │ ├── define-property@1.0.0
+74 silly idealTree:prePrune │ ├── is-accessor-descriptor@1.0.0
+74 silly idealTree:prePrune │ ├── is-data-descriptor@1.0.0
+74 silly idealTree:prePrune │ └── is-descriptor@1.0.2
+74 silly idealTree:prePrune ├── bcryptjs@2.4.3
+74 silly idealTree:prePrune ├── binary-extensions@1.13.0
+74 silly idealTree:prePrune ├── bluebird@3.5.1
+74 silly idealTree:prePrune ├─┬ body-parser@1.18.3
+74 silly idealTree:prePrune │ ├── debug@2.6.9
+74 silly idealTree:prePrune │ └── ms@2.0.0
+74 silly idealTree:prePrune ├── boxen@1.3.0
+74 silly idealTree:prePrune ├── brace-expansion@1.1.11
+74 silly idealTree:prePrune ├─┬ braces@2.3.2
+74 silly idealTree:prePrune │ └── extend-shallow@2.0.1
+74 silly idealTree:prePrune ├── bson@1.1.0
+74 silly idealTree:prePrune ├── buffer-equal-constant-time@1.0.1
+74 silly idealTree:prePrune ├── bytes@3.0.0
+74 silly idealTree:prePrune ├── cache-base@1.0.1
+74 silly idealTree:prePrune ├── camelcase@4.1.0
+74 silly idealTree:prePrune ├── capture-stack-trace@1.0.1
+74 silly idealTree:prePrune ├── chalk@2.4.2
+74 silly idealTree:prePrune ├── chokidar@2.1.2
+74 silly idealTree:prePrune ├── ci-info@1.6.0
+74 silly idealTree:prePrune ├─┬ class-utils@0.3.6
+74 silly idealTree:prePrune │ └── define-property@0.2.5
+74 silly idealTree:prePrune ├── cli-boxes@1.0.0
+74 silly idealTree:prePrune ├── collection-visit@1.0.0
+74 silly idealTree:prePrune ├── color-convert@1.9.3
+74 silly idealTree:prePrune ├── color-name@1.1.3
+74 silly idealTree:prePrune ├── component-emitter@1.2.1
+74 silly idealTree:prePrune ├── concat-map@0.0.1
+74 silly idealTree:prePrune ├── configstore@3.1.2
+74 silly idealTree:prePrune ├── content-disposition@0.5.2
+74 silly idealTree:prePrune ├── content-type@1.0.4
+74 silly idealTree:prePrune ├── cookie-signature@1.0.6
+74 silly idealTree:prePrune ├── cookie@0.3.1
+74 silly idealTree:prePrune ├── copy-descriptor@0.1.1
+74 silly idealTree:prePrune ├── core-util-is@1.0.2
+74 silly idealTree:prePrune ├── create-error-class@3.0.2
+74 silly idealTree:prePrune ├── cross-spawn@5.1.0
+74 silly idealTree:prePrune ├── crypto-random-string@1.0.0
+74 silly idealTree:prePrune ├─┬ debug@3.1.0
+74 silly idealTree:prePrune │ └── ms@2.0.0
+74 silly idealTree:prePrune ├── decode-uri-component@0.2.0
+74 silly idealTree:prePrune ├── deep-extend@0.6.0
+74 silly idealTree:prePrune ├─┬ define-property@2.0.2
+74 silly idealTree:prePrune │ ├── is-accessor-descriptor@1.0.0
+74 silly idealTree:prePrune │ ├── is-data-descriptor@1.0.0
+74 silly idealTree:prePrune │ └── is-descriptor@1.0.2
+74 silly idealTree:prePrune ├── depd@1.1.2
+74 silly idealTree:prePrune ├── destroy@1.0.4
+74 silly idealTree:prePrune ├── dot-prop@4.2.0
+74 silly idealTree:prePrune ├── duplexer3@0.1.4
+74 silly idealTree:prePrune ├── ecdsa-sig-formatter@1.0.11
+74 silly idealTree:prePrune ├── ee-first@1.1.1
+74 silly idealTree:prePrune ├── encodeurl@1.0.2
+74 silly idealTree:prePrune ├── escape-html@1.0.3
+74 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+74 silly idealTree:prePrune ├── etag@1.8.1
+74 silly idealTree:prePrune ├── execa@0.7.0
+74 silly idealTree:prePrune ├─┬ expand-brackets@2.1.4
+74 silly idealTree:prePrune │ ├── debug@2.6.9
+74 silly idealTree:prePrune │ ├── define-property@0.2.5
+74 silly idealTree:prePrune │ ├── extend-shallow@2.0.1
+74 silly idealTree:prePrune │ └── ms@2.0.0
+74 silly idealTree:prePrune ├─┬ express@4.16.4
+74 silly idealTree:prePrune │ ├── debug@2.6.9
+74 silly idealTree:prePrune │ ├── ms@2.0.0
+74 silly idealTree:prePrune │ └── statuses@1.4.0
+74 silly idealTree:prePrune ├─┬ extend-shallow@3.0.2
+74 silly idealTree:prePrune │ └── is-extendable@1.0.1
+74 silly idealTree:prePrune ├─┬ extglob@2.0.4
+74 silly idealTree:prePrune │ ├── define-property@1.0.0
+74 silly idealTree:prePrune │ ├── extend-shallow@2.0.1
+74 silly idealTree:prePrune │ ├── is-accessor-descriptor@1.0.0
+74 silly idealTree:prePrune │ ├── is-data-descriptor@1.0.0
+74 silly idealTree:prePrune │ └── is-descriptor@1.0.2
+74 silly idealTree:prePrune ├─┬ fill-range@4.0.0
+74 silly idealTree:prePrune │ └── extend-shallow@2.0.1
+74 silly idealTree:prePrune ├─┬ finalhandler@1.1.1
+74 silly idealTree:prePrune │ ├── debug@2.6.9
+74 silly idealTree:prePrune │ ├── ms@2.0.0
+74 silly idealTree:prePrune │ └── statuses@1.4.0
+74 silly idealTree:prePrune ├── for-in@1.0.2
+74 silly idealTree:prePrune ├── forwarded@0.1.2
+74 silly idealTree:prePrune ├── fragment-cache@0.2.1
+74 silly idealTree:prePrune ├── fresh@0.5.2
+74 silly idealTree:prePrune ├── get-stream@3.0.0
+74 silly idealTree:prePrune ├── get-value@2.0.6
+74 silly idealTree:prePrune ├─┬ glob-parent@3.1.0
+74 silly idealTree:prePrune │ └── is-glob@3.1.0
+74 silly idealTree:prePrune ├── global-dirs@0.1.1
+74 silly idealTree:prePrune ├── got@6.7.1
+74 silly idealTree:prePrune ├── graceful-fs@4.1.15
+74 silly idealTree:prePrune ├── has-flag@3.0.0
+74 silly idealTree:prePrune ├── has-value@1.0.0
+74 silly idealTree:prePrune ├─┬ has-values@1.0.0
+74 silly idealTree:prePrune │ └── kind-of@4.0.0
+74 silly idealTree:prePrune ├── http-errors@1.6.3
+74 silly idealTree:prePrune ├── iconv-lite@0.4.23
+74 silly idealTree:prePrune ├── ignore-by-default@1.0.1
+74 silly idealTree:prePrune ├── import-lazy@2.1.0
+74 silly idealTree:prePrune ├── imurmurhash@0.1.4
+74 silly idealTree:prePrune ├── inherits@2.0.3
+74 silly idealTree:prePrune ├── ini@1.3.5
+74 silly idealTree:prePrune ├── ipaddr.js@1.8.0
+74 silly idealTree:prePrune ├─┬ is-accessor-descriptor@0.1.6
+74 silly idealTree:prePrune │ └── kind-of@3.2.2
+74 silly idealTree:prePrune ├── is-binary-path@1.0.1
+74 silly idealTree:prePrune ├── is-buffer@1.1.6
+74 silly idealTree:prePrune ├── is-ci@1.2.1
+74 silly idealTree:prePrune ├─┬ is-data-descriptor@0.1.4
+74 silly idealTree:prePrune │ └── kind-of@3.2.2
+74 silly idealTree:prePrune ├─┬ is-descriptor@0.1.6
+74 silly idealTree:prePrune │ └── kind-of@5.1.0
+74 silly idealTree:prePrune ├── is-extendable@0.1.1
+74 silly idealTree:prePrune ├── is-extglob@2.1.1
+74 silly idealTree:prePrune ├── is-fullwidth-code-point@2.0.0
+74 silly idealTree:prePrune ├── is-glob@4.0.0
+74 silly idealTree:prePrune ├── is-installed-globally@0.1.0
+74 silly idealTree:prePrune ├── is-npm@1.0.0
+74 silly idealTree:prePrune ├─┬ is-number@3.0.0
+74 silly idealTree:prePrune │ └── kind-of@3.2.2
+74 silly idealTree:prePrune ├── is-obj@1.0.1
+74 silly idealTree:prePrune ├── is-path-inside@1.0.1
+74 silly idealTree:prePrune ├── is-plain-object@2.0.4
+74 silly idealTree:prePrune ├── is-redirect@1.0.0
+74 silly idealTree:prePrune ├── is-retry-allowed@1.1.0
+74 silly idealTree:prePrune ├── is-stream@1.1.0
+74 silly idealTree:prePrune ├── is-windows@1.0.2
+74 silly idealTree:prePrune ├── isarray@1.0.0
+74 silly idealTree:prePrune ├── isexe@2.0.0
+74 silly idealTree:prePrune ├── isobject@3.0.1
+74 silly idealTree:prePrune ├── jsonwebtoken@8.5.0
+74 silly idealTree:prePrune ├── jwa@1.4.0
+74 silly idealTree:prePrune ├── jws@3.2.1
+74 silly idealTree:prePrune ├── kareem@2.3.0
+74 silly idealTree:prePrune ├── kind-of@6.0.2
+74 silly idealTree:prePrune ├── latest-version@3.1.0
+74 silly idealTree:prePrune ├── lodash.includes@4.3.0
+74 silly idealTree:prePrune ├── lodash.isboolean@3.0.3
+74 silly idealTree:prePrune ├── lodash.isinteger@4.0.4
+74 silly idealTree:prePrune ├── lodash.isnumber@3.0.3
+74 silly idealTree:prePrune ├── lodash.isplainobject@4.0.6
+74 silly idealTree:prePrune ├── lodash.isstring@4.0.1
+74 silly idealTree:prePrune ├── lodash.once@4.1.1
+74 silly idealTree:prePrune ├── lodash@4.17.11
+74 silly idealTree:prePrune ├── lowercase-keys@1.0.1
+74 silly idealTree:prePrune ├── lru-cache@4.1.5
+74 silly idealTree:prePrune ├── make-dir@1.3.0
+74 silly idealTree:prePrune ├── map-cache@0.2.2
+74 silly idealTree:prePrune ├── map-visit@1.0.0
+74 silly idealTree:prePrune ├── media-typer@0.3.0
+74 silly idealTree:prePrune ├── memory-pager@1.5.0
+74 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+74 silly idealTree:prePrune ├── methods@1.1.2
+74 silly idealTree:prePrune ├── micromatch@3.1.10
+74 silly idealTree:prePrune ├── mime-db@1.38.0
+74 silly idealTree:prePrune ├── mime-types@2.1.22
+74 silly idealTree:prePrune ├── mime@1.4.1
+74 silly idealTree:prePrune ├── minimatch@3.0.4
+74 silly idealTree:prePrune ├── minimist@1.2.0
+74 silly idealTree:prePrune ├─┬ mixin-deep@1.3.1
+74 silly idealTree:prePrune │ └── is-extendable@1.0.1
+74 silly idealTree:prePrune ├── mongodb-core@3.1.11
+74 silly idealTree:prePrune ├── mongodb@3.1.13
+74 silly idealTree:prePrune ├── mongoose-legacy-pluralize@1.0.2
+74 silly idealTree:prePrune ├── mongoose@5.4.17
+74 silly idealTree:prePrune ├── mpath@0.5.1
+74 silly idealTree:prePrune ├── mquery@3.2.0
+74 silly idealTree:prePrune ├── ms@2.1.1
+74 silly idealTree:prePrune ├── nanomatch@1.2.13
+74 silly idealTree:prePrune ├── negotiator@0.6.1
+74 silly idealTree:prePrune ├── nodemon@1.18.10
+74 silly idealTree:prePrune ├── nopt@1.0.10
+74 silly idealTree:prePrune ├── normalize-path@3.0.0
+74 silly idealTree:prePrune ├── npm-run-path@2.0.2
+74 silly idealTree:prePrune ├─┬ object-copy@0.1.0
+74 silly idealTree:prePrune │ ├── define-property@0.2.5
+74 silly idealTree:prePrune │ └── kind-of@3.2.2
+74 silly idealTree:prePrune ├── object-visit@1.0.1
+74 silly idealTree:prePrune ├── object.pick@1.3.0
+74 silly idealTree:prePrune ├── on-finished@2.3.0
+74 silly idealTree:prePrune ├── p-finally@1.0.0
+74 silly idealTree:prePrune ├── package-json@4.0.1
+74 silly idealTree:prePrune ├── packagename@2.0.1
+74 silly idealTree:prePrune ├── parseurl@1.3.2
+74 silly idealTree:prePrune ├── pascalcase@0.1.1
+74 silly idealTree:prePrune ├── passport-jwt@4.0.0
+74 silly idealTree:prePrune ├── passport-strategy@1.0.0
+74 silly idealTree:prePrune ├── passport@0.4.0
+74 silly idealTree:prePrune ├── path-dirname@1.0.2
+74 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+74 silly idealTree:prePrune ├── path-is-inside@1.0.2
+74 silly idealTree:prePrune ├── path-key@2.0.1
+74 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+74 silly idealTree:prePrune ├── pause@0.0.1
+74 silly idealTree:prePrune ├── pify@3.0.0
+74 silly idealTree:prePrune ├── posix-character-classes@0.1.1
+74 silly idealTree:prePrune ├── prepend-http@1.0.4
+74 silly idealTree:prePrune ├── process-nextick-args@2.0.0
+74 silly idealTree:prePrune ├── proxy-addr@2.0.4
+74 silly idealTree:prePrune ├── pseudomap@1.0.2
+74 silly idealTree:prePrune ├── pstree.remy@1.1.6
+74 silly idealTree:prePrune ├── qs@6.5.2
+74 silly idealTree:prePrune ├── range-parser@1.2.0
+74 silly idealTree:prePrune ├── raw-body@2.3.3
+74 silly idealTree:prePrune ├── rc@1.2.8
+74 silly idealTree:prePrune ├── readable-stream@2.3.6
+74 silly idealTree:prePrune ├── readdirp@2.2.1
+74 silly idealTree:prePrune ├── regex-not@1.0.2
+74 silly idealTree:prePrune ├── regexp-clone@0.0.1
+74 silly idealTree:prePrune ├── registry-auth-token@3.3.2
+74 silly idealTree:prePrune ├── registry-url@3.1.0
+74 silly idealTree:prePrune ├── remove-trailing-separator@1.1.0
+74 silly idealTree:prePrune ├── repeat-element@1.1.3
+74 silly idealTree:prePrune ├── repeat-string@1.6.1
+74 silly idealTree:prePrune ├── require_optional@1.0.1
+74 silly idealTree:prePrune ├── resolve-from@2.0.0
+74 silly idealTree:prePrune ├── resolve-url@0.2.1
+74 silly idealTree:prePrune ├── ret@0.1.15
+74 silly idealTree:prePrune ├── safe-buffer@5.1.2
+74 silly idealTree:prePrune ├── safe-regex@1.1.0
+74 silly idealTree:prePrune ├── safer-buffer@2.1.2
+74 silly idealTree:prePrune ├── saslprep@1.0.2
+74 silly idealTree:prePrune ├── semver-diff@2.1.0
+74 silly idealTree:prePrune ├── semver@5.6.0
+74 silly idealTree:prePrune ├─┬ send@0.16.2
+74 silly idealTree:prePrune │ ├── debug@2.6.9
+74 silly idealTree:prePrune │ ├── ms@2.0.0
+74 silly idealTree:prePrune │ └── statuses@1.4.0
+74 silly idealTree:prePrune ├── serve-static@1.13.2
+74 silly idealTree:prePrune ├─┬ set-value@2.0.0
+74 silly idealTree:prePrune │ └── extend-shallow@2.0.1
+74 silly idealTree:prePrune ├── setprototypeof@1.1.0
+74 silly idealTree:prePrune ├── shebang-command@1.2.0
+74 silly idealTree:prePrune ├── shebang-regex@1.0.0
+74 silly idealTree:prePrune ├── signal-exit@3.0.2
+74 silly idealTree:prePrune ├── sliced@1.0.1
+74 silly idealTree:prePrune ├─┬ snapdragon-node@2.1.1
+74 silly idealTree:prePrune │ ├── define-property@1.0.0
+74 silly idealTree:prePrune │ ├── is-accessor-descriptor@1.0.0
+74 silly idealTree:prePrune │ ├── is-data-descriptor@1.0.0
+74 silly idealTree:prePrune │ └── is-descriptor@1.0.2
+74 silly idealTree:prePrune ├─┬ snapdragon-util@3.0.1
+74 silly idealTree:prePrune │ └── kind-of@3.2.2
+74 silly idealTree:prePrune ├─┬ snapdragon@0.8.2
+74 silly idealTree:prePrune │ ├── debug@2.6.9
+74 silly idealTree:prePrune │ ├── define-property@0.2.5
+74 silly idealTree:prePrune │ ├── extend-shallow@2.0.1
+74 silly idealTree:prePrune │ └── ms@2.0.0
+74 silly idealTree:prePrune ├── source-map-resolve@0.5.2
+74 silly idealTree:prePrune ├── source-map-url@0.4.0
+74 silly idealTree:prePrune ├── source-map@0.5.7
+74 silly idealTree:prePrune ├── sparse-bitfield@3.0.3
+74 silly idealTree:prePrune ├── split-string@3.1.0
+74 silly idealTree:prePrune ├─┬ static-extend@0.1.2
+74 silly idealTree:prePrune │ └── define-property@0.2.5
+74 silly idealTree:prePrune ├── statuses@1.5.0
+74 silly idealTree:prePrune ├── string_decoder@1.1.1
+74 silly idealTree:prePrune ├── string-width@2.1.1
+74 silly idealTree:prePrune ├── strip-ansi@4.0.0
+74 silly idealTree:prePrune ├── strip-eof@1.0.0
+74 silly idealTree:prePrune ├── strip-json-comments@2.0.1
+74 silly idealTree:prePrune ├── supports-color@5.5.0
+74 silly idealTree:prePrune ├── term-size@1.2.0
+74 silly idealTree:prePrune ├── timed-out@4.0.1
+74 silly idealTree:prePrune ├─┬ to-object-path@0.3.0
+74 silly idealTree:prePrune │ └── kind-of@3.2.2
+74 silly idealTree:prePrune ├── to-regex-range@2.1.1
+74 silly idealTree:prePrune ├── to-regex@3.0.2
+74 silly idealTree:prePrune ├── touch@3.1.0
+74 silly idealTree:prePrune ├── type-is@1.6.16
+74 silly idealTree:prePrune ├─┬ undefsafe@2.0.2
+74 silly idealTree:prePrune │ ├── debug@2.6.9
+74 silly idealTree:prePrune │ └── ms@2.0.0
+74 silly idealTree:prePrune ├─┬ union-value@1.0.0
+74 silly idealTree:prePrune │ ├── extend-shallow@2.0.1
+74 silly idealTree:prePrune │ └── set-value@0.4.3
+74 silly idealTree:prePrune ├── unique-string@1.0.0
+74 silly idealTree:prePrune ├── unpipe@1.0.0
+74 silly idealTree:prePrune ├─┬ unset-value@1.0.0
+74 silly idealTree:prePrune │ ├─┬ has-value@0.3.1
+74 silly idealTree:prePrune │ │ └── isobject@2.1.0
+74 silly idealTree:prePrune │ └── has-values@0.1.4
+74 silly idealTree:prePrune ├── unzip-response@2.0.1
+74 silly idealTree:prePrune ├── upath@1.1.0
+74 silly idealTree:prePrune ├── update-notifier@2.5.0
+74 silly idealTree:prePrune ├── urix@0.1.0
+74 silly idealTree:prePrune ├── url-parse-lax@1.0.0
+74 silly idealTree:prePrune ├── use@3.1.1
+74 silly idealTree:prePrune ├── util-deprecate@1.0.2
+74 silly idealTree:prePrune ├── utils-merge@1.0.1
+74 silly idealTree:prePrune ├── validator@10.11.0
+74 silly idealTree:prePrune ├── vary@1.1.2
+74 silly idealTree:prePrune ├── which@1.3.1
+74 silly idealTree:prePrune ├── widest-line@2.0.1
+74 silly idealTree:prePrune ├── write-file-atomic@2.4.2
+74 silly idealTree:prePrune ├── xdg-basedir@3.0.0
+74 silly idealTree:prePrune └── yallist@2.1.2
+75 silly loadIdealTree Finishing
+76 silly currentTree event@1.0.0
+76 silly currentTree ├── abbrev@1.1.1
+76 silly currentTree ├── accepts@1.3.5
+76 silly currentTree ├── ansi-align@2.0.0
+76 silly currentTree ├── ansi-regex@3.0.0
+76 silly currentTree ├── ansi-styles@3.2.1
+76 silly currentTree ├─┬ anymatch@2.0.0
+76 silly currentTree │ └── normalize-path@2.1.1
+76 silly currentTree ├── arr-diff@4.0.0
+76 silly currentTree ├── arr-flatten@1.1.0
+76 silly currentTree ├── arr-union@3.1.0
+76 silly currentTree ├── array-flatten@1.1.1
+76 silly currentTree ├── array-unique@0.3.2
+76 silly currentTree ├── assign-symbols@1.0.0
+76 silly currentTree ├── async-each@1.0.1
+76 silly currentTree ├── async@2.6.1
+76 silly currentTree ├── atob@2.1.2
+76 silly currentTree ├── balanced-match@1.0.0
+76 silly currentTree ├─┬ base@0.11.2
+76 silly currentTree │ ├── define-property@1.0.0
+76 silly currentTree │ ├── is-accessor-descriptor@1.0.0
+76 silly currentTree │ ├── is-data-descriptor@1.0.0
+76 silly currentTree │ └── is-descriptor@1.0.2
+76 silly currentTree ├── bcryptjs@2.4.3
+76 silly currentTree ├── binary-extensions@1.13.0
+76 silly currentTree ├── bluebird@3.5.1
+76 silly currentTree ├─┬ body-parser@1.18.3
+76 silly currentTree │ ├── debug@2.6.9
+76 silly currentTree │ └── ms@2.0.0
+76 silly currentTree ├── boxen@1.3.0
+76 silly currentTree ├── brace-expansion@1.1.11
+76 silly currentTree ├─┬ braces@2.3.2
+76 silly currentTree │ └── extend-shallow@2.0.1
+76 silly currentTree ├── bson@1.1.0
+76 silly currentTree ├── buffer-equal-constant-time@1.0.1
+76 silly currentTree ├── bytes@3.0.0
+76 silly currentTree ├── cache-base@1.0.1
+76 silly currentTree ├── camelcase@4.1.0
+76 silly currentTree ├── capture-stack-trace@1.0.1
+76 silly currentTree ├── chalk@2.4.2
+76 silly currentTree ├── chokidar@2.1.2
+76 silly currentTree ├── ci-info@1.6.0
+76 silly currentTree ├─┬ class-utils@0.3.6
+76 silly currentTree │ └── define-property@0.2.5
+76 silly currentTree ├── cli-boxes@1.0.0
+76 silly currentTree ├── collection-visit@1.0.0
+76 silly currentTree ├── color-convert@1.9.3
+76 silly currentTree ├── color-name@1.1.3
+76 silly currentTree ├── component-emitter@1.2.1
+76 silly currentTree ├── concat-map@0.0.1
+76 silly currentTree ├── configstore@3.1.2
+76 silly currentTree ├── content-disposition@0.5.2
+76 silly currentTree ├── content-type@1.0.4
+76 silly currentTree ├── cookie-signature@1.0.6
+76 silly currentTree ├── cookie@0.3.1
+76 silly currentTree ├── copy-descriptor@0.1.1
+76 silly currentTree ├── core-util-is@1.0.2
+76 silly currentTree ├── create-error-class@3.0.2
+76 silly currentTree ├── cross-spawn@5.1.0
+76 silly currentTree ├── crypto-random-string@1.0.0
+76 silly currentTree ├─┬ debug@3.1.0
+76 silly currentTree │ └── ms@2.0.0
+76 silly currentTree ├── decode-uri-component@0.2.0
+76 silly currentTree ├── deep-extend@0.6.0
+76 silly currentTree ├─┬ define-property@2.0.2
+76 silly currentTree │ ├── is-accessor-descriptor@1.0.0
+76 silly currentTree │ ├── is-data-descriptor@1.0.0
+76 silly currentTree │ └── is-descriptor@1.0.2
+76 silly currentTree ├── depd@1.1.2
+76 silly currentTree ├── destroy@1.0.4
+76 silly currentTree ├── dot-prop@4.2.0
+76 silly currentTree ├── duplexer3@0.1.4
+76 silly currentTree ├── ecdsa-sig-formatter@1.0.11
+76 silly currentTree ├── ee-first@1.1.1
+76 silly currentTree ├── encodeurl@1.0.2
+76 silly currentTree ├── escape-html@1.0.3
+76 silly currentTree ├── escape-string-regexp@1.0.5
+76 silly currentTree ├── etag@1.8.1
+76 silly currentTree ├── execa@0.7.0
+76 silly currentTree ├─┬ expand-brackets@2.1.4
+76 silly currentTree │ ├── debug@2.6.9
+76 silly currentTree │ ├── define-property@0.2.5
+76 silly currentTree │ ├── extend-shallow@2.0.1
+76 silly currentTree │ └── ms@2.0.0
+76 silly currentTree ├─┬ express@4.16.4
+76 silly currentTree │ ├── debug@2.6.9
+76 silly currentTree │ ├── ms@2.0.0
+76 silly currentTree │ └── statuses@1.4.0
+76 silly currentTree ├─┬ extend-shallow@3.0.2
+76 silly currentTree │ └── is-extendable@1.0.1
+76 silly currentTree ├─┬ extglob@2.0.4
+76 silly currentTree │ ├── define-property@1.0.0
+76 silly currentTree │ ├── extend-shallow@2.0.1
+76 silly currentTree │ ├── is-accessor-descriptor@1.0.0
+76 silly currentTree │ ├── is-data-descriptor@1.0.0
+76 silly currentTree │ └── is-descriptor@1.0.2
+76 silly currentTree ├─┬ fill-range@4.0.0
+76 silly currentTree │ └── extend-shallow@2.0.1
+76 silly currentTree ├─┬ finalhandler@1.1.1
+76 silly currentTree │ ├── debug@2.6.9
+76 silly currentTree │ ├── ms@2.0.0
+76 silly currentTree │ └── statuses@1.4.0
+76 silly currentTree ├── for-in@1.0.2
+76 silly currentTree ├── forwarded@0.1.2
+76 silly currentTree ├── fragment-cache@0.2.1
+76 silly currentTree ├── fresh@0.5.2
+76 silly currentTree ├── get-stream@3.0.0
+76 silly currentTree ├── get-value@2.0.6
+76 silly currentTree ├─┬ glob-parent@3.1.0
+76 silly currentTree │ └── is-glob@3.1.0
+76 silly currentTree ├── global-dirs@0.1.1
+76 silly currentTree ├── got@6.7.1
+76 silly currentTree ├── graceful-fs@4.1.15
+76 silly currentTree ├── has-flag@3.0.0
+76 silly currentTree ├── has-value@1.0.0
+76 silly currentTree ├─┬ has-values@1.0.0
+76 silly currentTree │ └── kind-of@4.0.0
+76 silly currentTree ├── http-errors@1.6.3
+76 silly currentTree ├── iconv-lite@0.4.23
+76 silly currentTree ├── ignore-by-default@1.0.1
+76 silly currentTree ├── import-lazy@2.1.0
+76 silly currentTree ├── imurmurhash@0.1.4
+76 silly currentTree ├── inherits@2.0.3
+76 silly currentTree ├── ini@1.3.5
+76 silly currentTree ├── ipaddr.js@1.8.0
+76 silly currentTree ├─┬ is-accessor-descriptor@0.1.6
+76 silly currentTree │ └── kind-of@3.2.2
+76 silly currentTree ├── is-binary-path@1.0.1
+76 silly currentTree ├── is-buffer@1.1.6
+76 silly currentTree ├── is-ci@1.2.1
+76 silly currentTree ├─┬ is-data-descriptor@0.1.4
+76 silly currentTree │ └── kind-of@3.2.2
+76 silly currentTree ├─┬ is-descriptor@0.1.6
+76 silly currentTree │ └── kind-of@5.1.0
+76 silly currentTree ├── is-extendable@0.1.1
+76 silly currentTree ├── is-extglob@2.1.1
+76 silly currentTree ├── is-fullwidth-code-point@2.0.0
+76 silly currentTree ├── is-glob@4.0.0
+76 silly currentTree ├── is-installed-globally@0.1.0
+76 silly currentTree ├── is-npm@1.0.0
+76 silly currentTree ├─┬ is-number@3.0.0
+76 silly currentTree │ └── kind-of@3.2.2
+76 silly currentTree ├── is-obj@1.0.1
+76 silly currentTree ├── is-path-inside@1.0.1
+76 silly currentTree ├── is-plain-object@2.0.4
+76 silly currentTree ├── is-redirect@1.0.0
+76 silly currentTree ├── is-retry-allowed@1.1.0
+76 silly currentTree ├── is-stream@1.1.0
+76 silly currentTree ├── is-windows@1.0.2
+76 silly currentTree ├── isarray@1.0.0
+76 silly currentTree ├── isexe@2.0.0
+76 silly currentTree ├── isobject@3.0.1
+76 silly currentTree ├── jsonwebtoken@8.5.0
+76 silly currentTree ├── jwa@1.4.0
+76 silly currentTree ├── jws@3.2.1
+76 silly currentTree ├── kareem@2.3.0
+76 silly currentTree ├── kind-of@6.0.2
+76 silly currentTree ├── latest-version@3.1.0
+76 silly currentTree ├── lodash.includes@4.3.0
+76 silly currentTree ├── lodash.isboolean@3.0.3
+76 silly currentTree ├── lodash.isinteger@4.0.4
+76 silly currentTree ├── lodash.isnumber@3.0.3
+76 silly currentTree ├── lodash.isplainobject@4.0.6
+76 silly currentTree ├── lodash.isstring@4.0.1
+76 silly currentTree ├── lodash.once@4.1.1
+76 silly currentTree ├── lodash@4.17.11
+76 silly currentTree ├── lowercase-keys@1.0.1
+76 silly currentTree ├── lru-cache@4.1.5
+76 silly currentTree ├── make-dir@1.3.0
+76 silly currentTree ├── map-cache@0.2.2
+76 silly currentTree ├── map-visit@1.0.0
+76 silly currentTree ├── media-typer@0.3.0
+76 silly currentTree ├── memory-pager@1.5.0
+76 silly currentTree ├── merge-descriptors@1.0.1
+76 silly currentTree ├── methods@1.1.2
+76 silly currentTree ├── micromatch@3.1.10
+76 silly currentTree ├── mime-db@1.38.0
+76 silly currentTree ├── mime-types@2.1.22
+76 silly currentTree ├── mime@1.4.1
+76 silly currentTree ├── minimatch@3.0.4
+76 silly currentTree ├── minimist@1.2.0
+76 silly currentTree ├─┬ mixin-deep@1.3.1
+76 silly currentTree │ └── is-extendable@1.0.1
+76 silly currentTree ├── mongodb-core@3.1.11
+76 silly currentTree ├── mongodb@3.1.13
+76 silly currentTree ├── mongoose-legacy-pluralize@1.0.2
+76 silly currentTree ├── mongoose@5.4.17
+76 silly currentTree ├── mpath@0.5.1
+76 silly currentTree ├── mquery@3.2.0
+76 silly currentTree ├── ms@2.1.1
+76 silly currentTree ├── nanomatch@1.2.13
+76 silly currentTree ├── negotiator@0.6.1
+76 silly currentTree ├── nodemon@1.18.10
+76 silly currentTree ├── nopt@1.0.10
+76 silly currentTree ├── normalize-path@3.0.0
+76 silly currentTree ├── npm-run-path@2.0.2
+76 silly currentTree ├─┬ object-copy@0.1.0
+76 silly currentTree │ ├── define-property@0.2.5
+76 silly currentTree │ └── kind-of@3.2.2
+76 silly currentTree ├── object-visit@1.0.1
+76 silly currentTree ├── object.pick@1.3.0
+76 silly currentTree ├── on-finished@2.3.0
+76 silly currentTree ├── p-finally@1.0.0
+76 silly currentTree ├── package-json@4.0.1
+76 silly currentTree ├── parseurl@1.3.2
+76 silly currentTree ├── pascalcase@0.1.1
+76 silly currentTree ├── passport-jwt@4.0.0
+76 silly currentTree ├── passport-strategy@1.0.0
+76 silly currentTree ├── passport@0.4.0
+76 silly currentTree ├── path-dirname@1.0.2
+76 silly currentTree ├── path-is-absolute@1.0.1
+76 silly currentTree ├── path-is-inside@1.0.2
+76 silly currentTree ├── path-key@2.0.1
+76 silly currentTree ├── path-to-regexp@0.1.7
+76 silly currentTree ├── pause@0.0.1
+76 silly currentTree ├── pify@3.0.0
+76 silly currentTree ├── posix-character-classes@0.1.1
+76 silly currentTree ├── prepend-http@1.0.4
+76 silly currentTree ├── process-nextick-args@2.0.0
+76 silly currentTree ├── proxy-addr@2.0.4
+76 silly currentTree ├── pseudomap@1.0.2
+76 silly currentTree ├── pstree.remy@1.1.6
+76 silly currentTree ├── qs@6.5.2
+76 silly currentTree ├── range-parser@1.2.0
+76 silly currentTree ├── raw-body@2.3.3
+76 silly currentTree ├── rc@1.2.8
+76 silly currentTree ├── readable-stream@2.3.6
+76 silly currentTree ├── readdirp@2.2.1
+76 silly currentTree ├── regex-not@1.0.2
+76 silly currentTree ├── regexp-clone@0.0.1
+76 silly currentTree ├── registry-auth-token@3.3.2
+76 silly currentTree ├── registry-url@3.1.0
+76 silly currentTree ├── remove-trailing-separator@1.1.0
+76 silly currentTree ├── repeat-element@1.1.3
+76 silly currentTree ├── repeat-string@1.6.1
+76 silly currentTree ├── require_optional@1.0.1
+76 silly currentTree ├── resolve-from@2.0.0
+76 silly currentTree ├── resolve-url@0.2.1
+76 silly currentTree ├── ret@0.1.15
+76 silly currentTree ├── safe-buffer@5.1.2
+76 silly currentTree ├── safe-regex@1.1.0
+76 silly currentTree ├── safer-buffer@2.1.2
+76 silly currentTree ├── saslprep@1.0.2
+76 silly currentTree ├── semver-diff@2.1.0
+76 silly currentTree ├── semver@5.6.0
+76 silly currentTree ├─┬ send@0.16.2
+76 silly currentTree │ ├── debug@2.6.9
+76 silly currentTree │ ├── ms@2.0.0
+76 silly currentTree │ └── statuses@1.4.0
+76 silly currentTree ├── serve-static@1.13.2
+76 silly currentTree ├─┬ set-value@2.0.0
+76 silly currentTree │ └── extend-shallow@2.0.1
+76 silly currentTree ├── setprototypeof@1.1.0
+76 silly currentTree ├── shebang-command@1.2.0
+76 silly currentTree ├── shebang-regex@1.0.0
+76 silly currentTree ├── signal-exit@3.0.2
+76 silly currentTree ├── sliced@1.0.1
+76 silly currentTree ├─┬ snapdragon-node@2.1.1
+76 silly currentTree │ ├── define-property@1.0.0
+76 silly currentTree │ ├── is-accessor-descriptor@1.0.0
+76 silly currentTree │ ├── is-data-descriptor@1.0.0
+76 silly currentTree │ └── is-descriptor@1.0.2
+76 silly currentTree ├─┬ snapdragon-util@3.0.1
+76 silly currentTree │ └── kind-of@3.2.2
+76 silly currentTree ├─┬ snapdragon@0.8.2
+76 silly currentTree │ ├── debug@2.6.9
+76 silly currentTree │ ├── define-property@0.2.5
+76 silly currentTree │ ├── extend-shallow@2.0.1
+76 silly currentTree │ └── ms@2.0.0
+76 silly currentTree ├── source-map-resolve@0.5.2
+76 silly currentTree ├── source-map-url@0.4.0
+76 silly currentTree ├── source-map@0.5.7
+76 silly currentTree ├── sparse-bitfield@3.0.3
+76 silly currentTree ├── split-string@3.1.0
+76 silly currentTree ├─┬ static-extend@0.1.2
+76 silly currentTree │ └── define-property@0.2.5
+76 silly currentTree ├── statuses@1.5.0
+76 silly currentTree ├── string_decoder@1.1.1
+76 silly currentTree ├── string-width@2.1.1
+76 silly currentTree ├── strip-ansi@4.0.0
+76 silly currentTree ├── strip-eof@1.0.0
+76 silly currentTree ├── strip-json-comments@2.0.1
+76 silly currentTree ├── supports-color@5.5.0
+76 silly currentTree ├── term-size@1.2.0
+76 silly currentTree ├── timed-out@4.0.1
+76 silly currentTree ├─┬ to-object-path@0.3.0
+76 silly currentTree │ └── kind-of@3.2.2
+76 silly currentTree ├── to-regex-range@2.1.1
+76 silly currentTree ├── to-regex@3.0.2
+76 silly currentTree ├── touch@3.1.0
+76 silly currentTree ├── type-is@1.6.16
+76 silly currentTree ├─┬ undefsafe@2.0.2
+76 silly currentTree │ ├── debug@2.6.9
+76 silly currentTree │ └── ms@2.0.0
+76 silly currentTree ├─┬ union-value@1.0.0
+76 silly currentTree │ ├── extend-shallow@2.0.1
+76 silly currentTree │ └── set-value@0.4.3
+76 silly currentTree ├── unique-string@1.0.0
+76 silly currentTree ├── unpipe@1.0.0
+76 silly currentTree ├─┬ unset-value@1.0.0
+76 silly currentTree │ ├─┬ has-value@0.3.1
+76 silly currentTree │ │ └── isobject@2.1.0
+76 silly currentTree │ └── has-values@0.1.4
+76 silly currentTree ├── unzip-response@2.0.1
+76 silly currentTree ├── upath@1.1.0
+76 silly currentTree ├── update-notifier@2.5.0
+76 silly currentTree ├── urix@0.1.0
+76 silly currentTree ├── url-parse-lax@1.0.0
+76 silly currentTree ├── use@3.1.1
+76 silly currentTree ├── util-deprecate@1.0.2
+76 silly currentTree ├── utils-merge@1.0.1
+76 silly currentTree ├── validator@10.11.0
+76 silly currentTree ├── vary@1.1.2
+76 silly currentTree ├── which@1.3.1
+76 silly currentTree ├── widest-line@2.0.1
+76 silly currentTree ├── write-file-atomic@2.4.2
+76 silly currentTree ├── xdg-basedir@3.0.0
+76 silly currentTree └── yallist@2.1.2
+77 silly idealTree event@1.0.0
+77 silly idealTree ├── abbrev@1.1.1
+77 silly idealTree ├── accepts@1.3.5
+77 silly idealTree ├── ansi-align@2.0.0
+77 silly idealTree ├── ansi-regex@3.0.0
+77 silly idealTree ├── ansi-styles@3.2.1
+77 silly idealTree ├─┬ anymatch@2.0.0
+77 silly idealTree │ └── normalize-path@2.1.1
+77 silly idealTree ├── arr-diff@4.0.0
+77 silly idealTree ├── arr-flatten@1.1.0
+77 silly idealTree ├── arr-union@3.1.0
+77 silly idealTree ├── array-flatten@1.1.1
+77 silly idealTree ├── array-unique@0.3.2
+77 silly idealTree ├── assign-symbols@1.0.0
+77 silly idealTree ├── async-each@1.0.1
+77 silly idealTree ├── async@2.6.1
+77 silly idealTree ├── atob@2.1.2
+77 silly idealTree ├── balanced-match@1.0.0
+77 silly idealTree ├─┬ base@0.11.2
+77 silly idealTree │ ├── define-property@1.0.0
+77 silly idealTree │ ├── is-accessor-descriptor@1.0.0
+77 silly idealTree │ ├── is-data-descriptor@1.0.0
+77 silly idealTree │ └── is-descriptor@1.0.2
+77 silly idealTree ├── bcryptjs@2.4.3
+77 silly idealTree ├── binary-extensions@1.13.0
+77 silly idealTree ├── bluebird@3.5.1
+77 silly idealTree ├─┬ body-parser@1.18.3
+77 silly idealTree │ ├── debug@2.6.9
+77 silly idealTree │ └── ms@2.0.0
+77 silly idealTree ├── boxen@1.3.0
+77 silly idealTree ├── brace-expansion@1.1.11
+77 silly idealTree ├─┬ braces@2.3.2
+77 silly idealTree │ └── extend-shallow@2.0.1
+77 silly idealTree ├── bson@1.1.0
+77 silly idealTree ├── buffer-equal-constant-time@1.0.1
+77 silly idealTree ├── bytes@3.0.0
+77 silly idealTree ├── cache-base@1.0.1
+77 silly idealTree ├── camelcase@4.1.0
+77 silly idealTree ├── capture-stack-trace@1.0.1
+77 silly idealTree ├── chalk@2.4.2
+77 silly idealTree ├── chokidar@2.1.2
+77 silly idealTree ├── ci-info@1.6.0
+77 silly idealTree ├─┬ class-utils@0.3.6
+77 silly idealTree │ └── define-property@0.2.5
+77 silly idealTree ├── cli-boxes@1.0.0
+77 silly idealTree ├── collection-visit@1.0.0
+77 silly idealTree ├── color-convert@1.9.3
+77 silly idealTree ├── color-name@1.1.3
+77 silly idealTree ├── component-emitter@1.2.1
+77 silly idealTree ├── concat-map@0.0.1
+77 silly idealTree ├── configstore@3.1.2
+77 silly idealTree ├── content-disposition@0.5.2
+77 silly idealTree ├── content-type@1.0.4
+77 silly idealTree ├── cookie-signature@1.0.6
+77 silly idealTree ├── cookie@0.3.1
+77 silly idealTree ├── copy-descriptor@0.1.1
+77 silly idealTree ├── core-util-is@1.0.2
+77 silly idealTree ├── create-error-class@3.0.2
+77 silly idealTree ├── cross-spawn@5.1.0
+77 silly idealTree ├── crypto-random-string@1.0.0
+77 silly idealTree ├─┬ debug@3.1.0
+77 silly idealTree │ └── ms@2.0.0
+77 silly idealTree ├── decode-uri-component@0.2.0
+77 silly idealTree ├── deep-extend@0.6.0
+77 silly idealTree ├─┬ define-property@2.0.2
+77 silly idealTree │ ├── is-accessor-descriptor@1.0.0
+77 silly idealTree │ ├── is-data-descriptor@1.0.0
+77 silly idealTree │ └── is-descriptor@1.0.2
+77 silly idealTree ├── depd@1.1.2
+77 silly idealTree ├── destroy@1.0.4
+77 silly idealTree ├── dot-prop@4.2.0
+77 silly idealTree ├── duplexer3@0.1.4
+77 silly idealTree ├── ecdsa-sig-formatter@1.0.11
+77 silly idealTree ├── ee-first@1.1.1
+77 silly idealTree ├── encodeurl@1.0.2
+77 silly idealTree ├── escape-html@1.0.3
+77 silly idealTree ├── escape-string-regexp@1.0.5
+77 silly idealTree ├── etag@1.8.1
+77 silly idealTree ├── execa@0.7.0
+77 silly idealTree ├─┬ expand-brackets@2.1.4
+77 silly idealTree │ ├── debug@2.6.9
+77 silly idealTree │ ├── define-property@0.2.5
+77 silly idealTree │ ├── extend-shallow@2.0.1
+77 silly idealTree │ └── ms@2.0.0
+77 silly idealTree ├─┬ express@4.16.4
+77 silly idealTree │ ├── debug@2.6.9
+77 silly idealTree │ ├── ms@2.0.0
+77 silly idealTree │ └── statuses@1.4.0
+77 silly idealTree ├─┬ extend-shallow@3.0.2
+77 silly idealTree │ └── is-extendable@1.0.1
+77 silly idealTree ├─┬ extglob@2.0.4
+77 silly idealTree │ ├── define-property@1.0.0
+77 silly idealTree │ ├── extend-shallow@2.0.1
+77 silly idealTree │ ├── is-accessor-descriptor@1.0.0
+77 silly idealTree │ ├── is-data-descriptor@1.0.0
+77 silly idealTree │ └── is-descriptor@1.0.2
+77 silly idealTree ├─┬ fill-range@4.0.0
+77 silly idealTree │ └── extend-shallow@2.0.1
+77 silly idealTree ├─┬ finalhandler@1.1.1
+77 silly idealTree │ ├── debug@2.6.9
+77 silly idealTree │ ├── ms@2.0.0
+77 silly idealTree │ └── statuses@1.4.0
+77 silly idealTree ├── for-in@1.0.2
+77 silly idealTree ├── forwarded@0.1.2
+77 silly idealTree ├── fragment-cache@0.2.1
+77 silly idealTree ├── fresh@0.5.2
+77 silly idealTree ├── get-stream@3.0.0
+77 silly idealTree ├── get-value@2.0.6
+77 silly idealTree ├─┬ glob-parent@3.1.0
+77 silly idealTree │ └── is-glob@3.1.0
+77 silly idealTree ├── global-dirs@0.1.1
+77 silly idealTree ├── got@6.7.1
+77 silly idealTree ├── graceful-fs@4.1.15
+77 silly idealTree ├── has-flag@3.0.0
+77 silly idealTree ├── has-value@1.0.0
+77 silly idealTree ├─┬ has-values@1.0.0
+77 silly idealTree │ └── kind-of@4.0.0
+77 silly idealTree ├── http-errors@1.6.3
+77 silly idealTree ├── iconv-lite@0.4.23
+77 silly idealTree ├── ignore-by-default@1.0.1
+77 silly idealTree ├── import-lazy@2.1.0
+77 silly idealTree ├── imurmurhash@0.1.4
+77 silly idealTree ├── inherits@2.0.3
+77 silly idealTree ├── ini@1.3.5
+77 silly idealTree ├── ipaddr.js@1.8.0
+77 silly idealTree ├─┬ is-accessor-descriptor@0.1.6
+77 silly idealTree │ └── kind-of@3.2.2
+77 silly idealTree ├── is-binary-path@1.0.1
+77 silly idealTree ├── is-buffer@1.1.6
+77 silly idealTree ├── is-ci@1.2.1
+77 silly idealTree ├─┬ is-data-descriptor@0.1.4
+77 silly idealTree │ └── kind-of@3.2.2
+77 silly idealTree ├─┬ is-descriptor@0.1.6
+77 silly idealTree │ └── kind-of@5.1.0
+77 silly idealTree ├── is-extendable@0.1.1
+77 silly idealTree ├── is-extglob@2.1.1
+77 silly idealTree ├── is-fullwidth-code-point@2.0.0
+77 silly idealTree ├── is-glob@4.0.0
+77 silly idealTree ├── is-installed-globally@0.1.0
+77 silly idealTree ├── is-npm@1.0.0
+77 silly idealTree ├─┬ is-number@3.0.0
+77 silly idealTree │ └── kind-of@3.2.2
+77 silly idealTree ├── is-obj@1.0.1
+77 silly idealTree ├── is-path-inside@1.0.1
+77 silly idealTree ├── is-plain-object@2.0.4
+77 silly idealTree ├── is-redirect@1.0.0
+77 silly idealTree ├── is-retry-allowed@1.1.0
+77 silly idealTree ├── is-stream@1.1.0
+77 silly idealTree ├── is-windows@1.0.2
+77 silly idealTree ├── isarray@1.0.0
+77 silly idealTree ├── isexe@2.0.0
+77 silly idealTree ├── isobject@3.0.1
+77 silly idealTree ├── jsonwebtoken@8.5.0
+77 silly idealTree ├── jwa@1.4.0
+77 silly idealTree ├── jws@3.2.1
+77 silly idealTree ├── kareem@2.3.0
+77 silly idealTree ├── kind-of@6.0.2
+77 silly idealTree ├── latest-version@3.1.0
+77 silly idealTree ├── lodash.includes@4.3.0
+77 silly idealTree ├── lodash.isboolean@3.0.3
+77 silly idealTree ├── lodash.isinteger@4.0.4
+77 silly idealTree ├── lodash.isnumber@3.0.3
+77 silly idealTree ├── lodash.isplainobject@4.0.6
+77 silly idealTree ├── lodash.isstring@4.0.1
+77 silly idealTree ├── lodash.once@4.1.1
+77 silly idealTree ├── lodash@4.17.11
+77 silly idealTree ├── lowercase-keys@1.0.1
+77 silly idealTree ├── lru-cache@4.1.5
+77 silly idealTree ├── make-dir@1.3.0
+77 silly idealTree ├── map-cache@0.2.2
+77 silly idealTree ├── map-visit@1.0.0
+77 silly idealTree ├── media-typer@0.3.0
+77 silly idealTree ├── memory-pager@1.5.0
+77 silly idealTree ├── merge-descriptors@1.0.1
+77 silly idealTree ├── methods@1.1.2
+77 silly idealTree ├── micromatch@3.1.10
+77 silly idealTree ├── mime-db@1.38.0
+77 silly idealTree ├── mime-types@2.1.22
+77 silly idealTree ├── mime@1.4.1
+77 silly idealTree ├── minimatch@3.0.4
+77 silly idealTree ├── minimist@1.2.0
+77 silly idealTree ├─┬ mixin-deep@1.3.1
+77 silly idealTree │ └── is-extendable@1.0.1
+77 silly idealTree ├── mongodb-core@3.1.11
+77 silly idealTree ├── mongodb@3.1.13
+77 silly idealTree ├── mongoose-legacy-pluralize@1.0.2
+77 silly idealTree ├── mongoose@5.4.17
+77 silly idealTree ├── mpath@0.5.1
+77 silly idealTree ├── mquery@3.2.0
+77 silly idealTree ├── ms@2.1.1
+77 silly idealTree ├── nanomatch@1.2.13
+77 silly idealTree ├── negotiator@0.6.1
+77 silly idealTree ├── nodemon@1.18.10
+77 silly idealTree ├── nopt@1.0.10
+77 silly idealTree ├── normalize-path@3.0.0
+77 silly idealTree ├── npm-run-path@2.0.2
+77 silly idealTree ├─┬ object-copy@0.1.0
+77 silly idealTree │ ├── define-property@0.2.5
+77 silly idealTree │ └── kind-of@3.2.2
+77 silly idealTree ├── object-visit@1.0.1
+77 silly idealTree ├── object.pick@1.3.0
+77 silly idealTree ├── on-finished@2.3.0
+77 silly idealTree ├── p-finally@1.0.0
+77 silly idealTree ├── package-json@4.0.1
+77 silly idealTree ├── packagename@2.0.1
+77 silly idealTree ├── parseurl@1.3.2
+77 silly idealTree ├── pascalcase@0.1.1
+77 silly idealTree ├── passport-jwt@4.0.0
+77 silly idealTree ├── passport-strategy@1.0.0
+77 silly idealTree ├── passport@0.4.0
+77 silly idealTree ├── path-dirname@1.0.2
+77 silly idealTree ├── path-is-absolute@1.0.1
+77 silly idealTree ├── path-is-inside@1.0.2
+77 silly idealTree ├── path-key@2.0.1
+77 silly idealTree ├── path-to-regexp@0.1.7
+77 silly idealTree ├── pause@0.0.1
+77 silly idealTree ├── pify@3.0.0
+77 silly idealTree ├── posix-character-classes@0.1.1
+77 silly idealTree ├── prepend-http@1.0.4
+77 silly idealTree ├── process-nextick-args@2.0.0
+77 silly idealTree ├── proxy-addr@2.0.4
+77 silly idealTree ├── pseudomap@1.0.2
+77 silly idealTree ├── pstree.remy@1.1.6
+77 silly idealTree ├── qs@6.5.2
+77 silly idealTree ├── range-parser@1.2.0
+77 silly idealTree ├── raw-body@2.3.3
+77 silly idealTree ├── rc@1.2.8
+77 silly idealTree ├── readable-stream@2.3.6
+77 silly idealTree ├── readdirp@2.2.1
+77 silly idealTree ├── regex-not@1.0.2
+77 silly idealTree ├── regexp-clone@0.0.1
+77 silly idealTree ├── registry-auth-token@3.3.2
+77 silly idealTree ├── registry-url@3.1.0
+77 silly idealTree ├── remove-trailing-separator@1.1.0
+77 silly idealTree ├── repeat-element@1.1.3
+77 silly idealTree ├── repeat-string@1.6.1
+77 silly idealTree ├── require_optional@1.0.1
+77 silly idealTree ├── resolve-from@2.0.0
+77 silly idealTree ├── resolve-url@0.2.1
+77 silly idealTree ├── ret@0.1.15
+77 silly idealTree ├── safe-buffer@5.1.2
+77 silly idealTree ├── safe-regex@1.1.0
+77 silly idealTree ├── safer-buffer@2.1.2
+77 silly idealTree ├── saslprep@1.0.2
+77 silly idealTree ├── semver-diff@2.1.0
+77 silly idealTree ├── semver@5.6.0
+77 silly idealTree ├─┬ send@0.16.2
+77 silly idealTree │ ├── debug@2.6.9
+77 silly idealTree │ ├── ms@2.0.0
+77 silly idealTree │ └── statuses@1.4.0
+77 silly idealTree ├── serve-static@1.13.2
+77 silly idealTree ├─┬ set-value@2.0.0
+77 silly idealTree │ └── extend-shallow@2.0.1
+77 silly idealTree ├── setprototypeof@1.1.0
+77 silly idealTree ├── shebang-command@1.2.0
+77 silly idealTree ├── shebang-regex@1.0.0
+77 silly idealTree ├── signal-exit@3.0.2
+77 silly idealTree ├── sliced@1.0.1
+77 silly idealTree ├─┬ snapdragon-node@2.1.1
+77 silly idealTree │ ├── define-property@1.0.0
+77 silly idealTree │ ├── is-accessor-descriptor@1.0.0
+77 silly idealTree │ ├── is-data-descriptor@1.0.0
+77 silly idealTree │ └── is-descriptor@1.0.2
+77 silly idealTree ├─┬ snapdragon-util@3.0.1
+77 silly idealTree │ └── kind-of@3.2.2
+77 silly idealTree ├─┬ snapdragon@0.8.2
+77 silly idealTree │ ├── debug@2.6.9
+77 silly idealTree │ ├── define-property@0.2.5
+77 silly idealTree │ ├── extend-shallow@2.0.1
+77 silly idealTree │ └── ms@2.0.0
+77 silly idealTree ├── source-map-resolve@0.5.2
+77 silly idealTree ├── source-map-url@0.4.0
+77 silly idealTree ├── source-map@0.5.7
+77 silly idealTree ├── sparse-bitfield@3.0.3
+77 silly idealTree ├── split-string@3.1.0
+77 silly idealTree ├─┬ static-extend@0.1.2
+77 silly idealTree │ └── define-property@0.2.5
+77 silly idealTree ├── statuses@1.5.0
+77 silly idealTree ├── string_decoder@1.1.1
+77 silly idealTree ├── string-width@2.1.1
+77 silly idealTree ├── strip-ansi@4.0.0
+77 silly idealTree ├── strip-eof@1.0.0
+77 silly idealTree ├── strip-json-comments@2.0.1
+77 silly idealTree ├── supports-color@5.5.0
+77 silly idealTree ├── term-size@1.2.0
+77 silly idealTree ├── timed-out@4.0.1
+77 silly idealTree ├─┬ to-object-path@0.3.0
+77 silly idealTree │ └── kind-of@3.2.2
+77 silly idealTree ├── to-regex-range@2.1.1
+77 silly idealTree ├── to-regex@3.0.2
+77 silly idealTree ├── touch@3.1.0
+77 silly idealTree ├── type-is@1.6.16
+77 silly idealTree ├─┬ undefsafe@2.0.2
+77 silly idealTree │ ├── debug@2.6.9
+77 silly idealTree │ └── ms@2.0.0
+77 silly idealTree ├─┬ union-value@1.0.0
+77 silly idealTree │ ├── extend-shallow@2.0.1
+77 silly idealTree │ └── set-value@0.4.3
+77 silly idealTree ├── unique-string@1.0.0
+77 silly idealTree ├── unpipe@1.0.0
+77 silly idealTree ├─┬ unset-value@1.0.0
+77 silly idealTree │ ├─┬ has-value@0.3.1
+77 silly idealTree │ │ └── isobject@2.1.0
+77 silly idealTree │ └── has-values@0.1.4
+77 silly idealTree ├── unzip-response@2.0.1
+77 silly idealTree ├── upath@1.1.0
+77 silly idealTree ├── update-notifier@2.5.0
+77 silly idealTree ├── urix@0.1.0
+77 silly idealTree ├── url-parse-lax@1.0.0
+77 silly idealTree ├── use@3.1.1
+77 silly idealTree ├── util-deprecate@1.0.2
+77 silly idealTree ├── utils-merge@1.0.1
+77 silly idealTree ├── validator@10.11.0
+77 silly idealTree ├── vary@1.1.2
+77 silly idealTree ├── which@1.3.1
+77 silly idealTree ├── widest-line@2.0.1
+77 silly idealTree ├── write-file-atomic@2.4.2
+77 silly idealTree ├── xdg-basedir@3.0.0
+77 silly idealTree └── yallist@2.1.2
+78 silly generateActionsToTake Starting
+79 silly install generateActionsToTake
+80 silly generateActionsToTake Finishing
+81 silly diffTrees action count 9
+82 silly diffTrees update body-parser@1.18.3
+83 silly diffTrees update jsonwebtoken@8.5.0
+84 silly diffTrees update bcryptjs@2.4.3
+85 silly diffTrees update express@4.16.4
+86 silly diffTrees update mongoose@5.4.17
+87 silly diffTrees add packagename@2.0.1
+88 silly diffTrees update passport@0.4.0
+89 silly diffTrees update passport-jwt@4.0.0
+90 silly diffTrees update validator@10.11.0
+91 silly decomposeActions action count 72
+92 silly decomposeActions fetch body-parser@1.18.3
+93 silly decomposeActions extract body-parser@1.18.3
+94 silly decomposeActions test body-parser@1.18.3
+95 silly decomposeActions preinstall body-parser@1.18.3
+96 silly decomposeActions build body-parser@1.18.3
+97 silly decomposeActions install body-parser@1.18.3
+98 silly decomposeActions postinstall body-parser@1.18.3
+99 silly decomposeActions finalize body-parser@1.18.3
+100 silly decomposeActions fetch jsonwebtoken@8.5.0
+101 silly decomposeActions extract jsonwebtoken@8.5.0
+102 silly decomposeActions test jsonwebtoken@8.5.0
+103 silly decomposeActions preinstall jsonwebtoken@8.5.0
+104 silly decomposeActions build jsonwebtoken@8.5.0
+105 silly decomposeActions install jsonwebtoken@8.5.0
+106 silly decomposeActions postinstall jsonwebtoken@8.5.0
+107 silly decomposeActions finalize jsonwebtoken@8.5.0
+108 silly decomposeActions fetch bcryptjs@2.4.3
+109 silly decomposeActions extract bcryptjs@2.4.3
+110 silly decomposeActions test bcryptjs@2.4.3
+111 silly decomposeActions preinstall bcryptjs@2.4.3
+112 silly decomposeActions build bcryptjs@2.4.3
+113 silly decomposeActions install bcryptjs@2.4.3
+114 silly decomposeActions postinstall bcryptjs@2.4.3
+115 silly decomposeActions finalize bcryptjs@2.4.3
+116 silly decomposeActions fetch express@4.16.4
+117 silly decomposeActions extract express@4.16.4
+118 silly decomposeActions test express@4.16.4
+119 silly decomposeActions preinstall express@4.16.4
+120 silly decomposeActions build express@4.16.4
+121 silly decomposeActions install express@4.16.4
+122 silly decomposeActions postinstall express@4.16.4
+123 silly decomposeActions finalize express@4.16.4
+124 silly decomposeActions fetch mongoose@5.4.17
+125 silly decomposeActions extract mongoose@5.4.17
+126 silly decomposeActions test mongoose@5.4.17
+127 silly decomposeActions preinstall mongoose@5.4.17
+128 silly decomposeActions build mongoose@5.4.17
+129 silly decomposeActions install mongoose@5.4.17
+130 silly decomposeActions postinstall mongoose@5.4.17
+131 silly decomposeActions finalize mongoose@5.4.17
+132 silly decomposeActions fetch packagename@2.0.1
+133 silly decomposeActions extract packagename@2.0.1
+134 silly decomposeActions test packagename@2.0.1
+135 silly decomposeActions preinstall packagename@2.0.1
+136 silly decomposeActions build packagename@2.0.1
+137 silly decomposeActions install packagename@2.0.1
+138 silly decomposeActions postinstall packagename@2.0.1
+139 silly decomposeActions finalize packagename@2.0.1
+140 silly decomposeActions fetch passport@0.4.0
+141 silly decomposeActions extract passport@0.4.0
+142 silly decomposeActions test passport@0.4.0
+143 silly decomposeActions preinstall passport@0.4.0
+144 silly decomposeActions build passport@0.4.0
+145 silly decomposeActions install passport@0.4.0
+146 silly decomposeActions postinstall passport@0.4.0
+147 silly decomposeActions finalize passport@0.4.0
+148 silly decomposeActions fetch passport-jwt@4.0.0
+149 silly decomposeActions extract passport-jwt@4.0.0
+150 silly decomposeActions test passport-jwt@4.0.0
+151 silly decomposeActions preinstall passport-jwt@4.0.0
+152 silly decomposeActions build passport-jwt@4.0.0
+153 silly decomposeActions install passport-jwt@4.0.0
+154 silly decomposeActions postinstall passport-jwt@4.0.0
+155 silly decomposeActions finalize passport-jwt@4.0.0
+156 silly decomposeActions fetch validator@10.11.0
+157 silly decomposeActions extract validator@10.11.0
+158 silly decomposeActions test validator@10.11.0
+159 silly decomposeActions preinstall validator@10.11.0
+160 silly decomposeActions build validator@10.11.0
+161 silly decomposeActions install validator@10.11.0
+162 silly decomposeActions postinstall validator@10.11.0
+163 silly decomposeActions finalize validator@10.11.0
+164 silly executeActions Starting
+165 silly install executeActions
+166 silly doSerial global-install 0
+167 silly doParallel fetch 9
+168 verbose lock using /home/tega/.npm/_locks/staging-78ae4b0ae8015242.lock for /home/tega/Events/node_modules/.staging
+169 silly doParallel extract 9
+170 silly extract body-parser@1.18.3
+171 silly extract jsonwebtoken@8.5.0
+172 silly extract bcryptjs@2.4.3
+173 silly extract express@4.16.4
+174 silly extract mongoose@5.4.17
+175 silly extract packagename@2.0.1
+176 silly extract passport@0.4.0
+177 silly extract passport-jwt@4.0.0
+178 silly extract validator@10.11.0
+179 verbose unbuild node_modules/.staging/bcryptjs-24de31fb
+180 verbose unbuild node_modules/.staging/mongoose-31036976
+181 verbose unbuild node_modules/.staging/jsonwebtoken-91161c72
+182 verbose unbuild node_modules/.staging/body-parser-4d1821d9
+183 verbose unbuild node_modules/.staging/passport-jwt-60a34e5b
+184 verbose unbuild node_modules/.staging/passport-cf08ddd7
+185 verbose unbuild node_modules/.staging/validator-3c390a83
+186 verbose unbuild node_modules/.staging/express-cc07b4ca
+187 verbose unbuild node_modules/.staging/packagename-c1540208
+188 silly gentlyRm /home/tega/Events/node_modules/.staging/bcryptjs-24de31fb is being purged from base /home/tega/Events
+189 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/bcryptjs-24de31fb
+190 silly gentlyRm /home/tega/Events/node_modules/.staging/mongoose-31036976 is being purged from base /home/tega/Events
+191 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/mongoose-31036976
+192 silly gentlyRm /home/tega/Events/node_modules/.staging/jsonwebtoken-91161c72 is being purged from base /home/tega/Events
+193 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/jsonwebtoken-91161c72
+194 silly gentlyRm /home/tega/Events/node_modules/.staging/body-parser-4d1821d9 is being purged from base /home/tega/Events
+195 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/body-parser-4d1821d9
+196 silly gentlyRm /home/tega/Events/node_modules/.staging/passport-jwt-60a34e5b is being purged from base /home/tega/Events
+197 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/passport-jwt-60a34e5b
+198 silly gentlyRm /home/tega/Events/node_modules/.staging/passport-cf08ddd7 is being purged from base /home/tega/Events
+199 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/passport-cf08ddd7
+200 silly gentlyRm /home/tega/Events/node_modules/.staging/validator-3c390a83 is being purged from base /home/tega/Events
+201 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/validator-3c390a83
+202 silly gentlyRm /home/tega/Events/node_modules/.staging/express-cc07b4ca is being purged from base /home/tega/Events
+203 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/express-cc07b4ca
+204 verbose tar unpack /home/tega/.npm/bcryptjs/2.4.3/package.tgz
+205 verbose tar unpacking to /home/tega/Events/node_modules/.staging/bcryptjs-24de31fb
+206 silly gentlyRm /home/tega/Events/node_modules/.staging/bcryptjs-24de31fb is being purged
+207 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/bcryptjs-24de31fb
+208 verbose tar unpack /home/tega/.npm/mongoose/5.4.17/package.tgz
+209 verbose tar unpacking to /home/tega/Events/node_modules/.staging/mongoose-31036976
+210 silly gentlyRm /home/tega/Events/node_modules/.staging/mongoose-31036976 is being purged
+211 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/mongoose-31036976
+212 silly gentlyRm /home/tega/Events/node_modules/.staging/packagename-c1540208 is being purged from base /home/tega/Events
+213 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/packagename-c1540208
+214 verbose tar unpack /home/tega/.npm/jsonwebtoken/8.5.0/package.tgz
+215 verbose tar unpacking to /home/tega/Events/node_modules/.staging/jsonwebtoken-91161c72
+216 silly gentlyRm /home/tega/Events/node_modules/.staging/jsonwebtoken-91161c72 is being purged
+217 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/jsonwebtoken-91161c72
+218 verbose tar unpack /home/tega/.npm/body-parser/1.18.3/package.tgz
+219 verbose tar unpacking to /home/tega/Events/node_modules/.staging/body-parser-4d1821d9
+220 silly gentlyRm /home/tega/Events/node_modules/.staging/body-parser-4d1821d9 is being purged
+221 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/body-parser-4d1821d9
+222 verbose tar unpack /home/tega/.npm/passport-jwt/4.0.0/package.tgz
+223 verbose tar unpacking to /home/tega/Events/node_modules/.staging/passport-jwt-60a34e5b
+224 silly gentlyRm /home/tega/Events/node_modules/.staging/passport-jwt-60a34e5b is being purged
+225 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/passport-jwt-60a34e5b
+226 verbose tar unpack /home/tega/.npm/passport/0.4.0/package.tgz
+227 verbose tar unpacking to /home/tega/Events/node_modules/.staging/passport-cf08ddd7
+228 silly gentlyRm /home/tega/Events/node_modules/.staging/passport-cf08ddd7 is being purged
+229 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/passport-cf08ddd7
+230 verbose tar unpack /home/tega/.npm/validator/10.11.0/package.tgz
+231 verbose tar unpacking to /home/tega/Events/node_modules/.staging/validator-3c390a83
+232 silly gentlyRm /home/tega/Events/node_modules/.staging/validator-3c390a83 is being purged
+233 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/validator-3c390a83
+234 verbose tar unpack /home/tega/.npm/express/4.16.4/package.tgz
+235 verbose tar unpacking to /home/tega/Events/node_modules/.staging/express-cc07b4ca
+236 silly gentlyRm /home/tega/Events/node_modules/.staging/express-cc07b4ca is being purged
+237 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/express-cc07b4ca
+238 silly gunzTarPerm modes [ '775', '664' ]
+239 silly gunzTarPerm modes [ '775', '664' ]
+240 verbose tar unpack /home/tega/.npm/packagename/2.0.1/package.tgz
+241 verbose tar unpacking to /home/tega/Events/node_modules/.staging/packagename-c1540208
+242 silly gentlyRm /home/tega/Events/node_modules/.staging/packagename-c1540208 is being purged
+243 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/packagename-c1540208
+244 silly gunzTarPerm modes [ '775', '664' ]
+245 silly gunzTarPerm modes [ '775', '664' ]
+246 silly gunzTarPerm modes [ '775', '664' ]
+247 silly gunzTarPerm modes [ '775', '664' ]
+248 silly gunzTarPerm modes [ '775', '664' ]
+249 silly gunzTarPerm modes [ '775', '664' ]
+250 silly gunzTarPerm modes [ '775', '664' ]
+251 silly gunzTarPerm extractEntry package.json
+252 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+253 silly gunzTarPerm extractEntry package.json
+254 silly gunzTarPerm extractEntry package.json
+255 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+256 silly gunzTarPerm extractEntry package.json
+257 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+258 silly gunzTarPerm extractEntry package.json
+259 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+260 silly gunzTarPerm extractEntry package.json
+261 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+262 silly gunzTarPerm extractEntry package.json
+263 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+264 silly gunzTarPerm extractEntry package.json
+265 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+266 silly gunzTarPerm extractEntry package.json
+267 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+268 silly gunzTarPerm extractEntry .npmignore
+269 silly gunzTarPerm modified mode [ '.npmignore', 438, 436 ]
+270 silly gunzTarPerm extractEntry README.md
+271 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+272 silly gunzTarPerm extractEntry .travis.yml
+273 silly gunzTarPerm extractEntry browser.js
+274 silly gunzTarPerm extractEntry CHANGELOG.md
+275 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+276 silly gunzTarPerm extractEntry decode.js
+277 silly gunzTarPerm modified mode [ 'decode.js', 420, 436 ]
+278 silly gunzTarPerm extractEntry index.js
+279 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+280 silly gunzTarPerm extractEntry LICENSE
+281 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+282 silly gunzTarPerm extractEntry README.md
+283 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+284 silly gunzTarPerm extractEntry sign.js
+285 silly gunzTarPerm modified mode [ 'sign.js', 420, 436 ]
+286 silly gunzTarPerm extractEntry verify.js
+287 silly gunzTarPerm modified mode [ 'verify.js', 420, 436 ]
+288 silly gunzTarPerm extractEntry lib/JsonWebTokenError.js
+289 silly gunzTarPerm modified mode [ 'lib/JsonWebTokenError.js', 420, 436 ]
+290 silly gunzTarPerm extractEntry lib/NotBeforeError.js
+291 silly gunzTarPerm modified mode [ 'lib/NotBeforeError.js', 420, 436 ]
+292 silly gunzTarPerm extractEntry lib/psSupported.js
+293 silly gunzTarPerm modified mode [ 'lib/psSupported.js', 420, 436 ]
+294 silly gunzTarPerm extractEntry lib/timespan.js
+295 silly gunzTarPerm modified mode [ 'lib/timespan.js', 420, 436 ]
+296 silly gunzTarPerm extractEntry lib/TokenExpiredError.js
+297 silly gunzTarPerm modified mode [ 'lib/TokenExpiredError.js', 420, 436 ]
+298 silly gunzTarPerm extractEntry .travis.yml
+299 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+300 silly gunzTarPerm extractEntry LICENSE
+301 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+302 silly gunzTarPerm extractEntry README.md
+303 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+304 silly gunzTarPerm extractEntry .npmignore
+305 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+306 silly gunzTarPerm extractEntry README.md
+307 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+308 silly gunzTarPerm extractEntry LICENSE
+309 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+310 silly gunzTarPerm extractEntry index.js
+311 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+312 silly gunzTarPerm extractEntry HISTORY.md
+313 silly gunzTarPerm modified mode [ 'HISTORY.md', 420, 436 ]
+314 silly gunzTarPerm extractEntry lib/read.js
+315 silly gunzTarPerm modified mode [ 'lib/read.js', 420, 436 ]
+316 silly gunzTarPerm extractEntry lib/types/json.js
+317 silly gunzTarPerm modified mode [ 'lib/types/json.js', 420, 436 ]
+318 silly gunzTarPerm extractEntry lib/types/raw.js
+319 silly gunzTarPerm modified mode [ 'lib/types/raw.js', 420, 436 ]
+320 silly gunzTarPerm extractEntry lib/types/text.js
+321 silly gunzTarPerm modified mode [ 'lib/types/text.js', 420, 436 ]
+322 silly gunzTarPerm extractEntry lib/types/urlencoded.js
+323 silly gunzTarPerm modified mode [ 'lib/types/urlencoded.js', 420, 436 ]
+324 silly gunzTarPerm extractEntry CHANGELOG.md
+325 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+326 silly gunzTarPerm extractEntry History.md
+327 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+328 silly gunzTarPerm extractEntry README.md
+329 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+330 silly gunzTarPerm extractEntry bin/main.js
+331 silly gunzTarPerm modified mode [ 'bin/main.js', 438, 436 ]
+332 silly gunzTarPerm extractEntry index.js
+333 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+334 silly gunzTarPerm extractEntry index.js
+335 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+336 silly gunzTarPerm extractEntry LICENSE
+337 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+338 silly gunzTarPerm extractEntry History.md
+339 silly gunzTarPerm extractEntry lib/advance_math.js
+340 silly gunzTarPerm modified mode [ 'lib/advance_math.js', 438, 436 ]
+341 silly gunzTarPerm extractEntry lib/call_counter.js
+342 silly gunzTarPerm modified mode [ 'lib/call_counter.js', 438, 436 ]
+343 silly gunzTarPerm extractEntry README.md
+344 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+345 silly gunzTarPerm extractEntry docs/migrating.md
+346 silly gunzTarPerm modified mode [ 'docs/migrating.md', 420, 436 ]
+347 silly gunzTarPerm extractEntry LICENSE
+348 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+349 silly gunzTarPerm extractEntry lib/authenticator.js
+350 silly gunzTarPerm modified mode [ 'lib/authenticator.js', 420, 436 ]
+351 silly gunzTarPerm extractEntry LICENSE
+352 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+353 silly gunzTarPerm extractEntry README.md
+354 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+355 silly gunzTarPerm extractEntry validator.js
+356 silly gunzTarPerm modified mode [ 'validator.js', 420, 436 ]
+357 silly gunzTarPerm extractEntry LICENSE
+358 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+359 silly gunzTarPerm extractEntry Readme.md
+360 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+361 silly gunzTarPerm extractEntry lib/application.js
+362 silly gunzTarPerm modified mode [ 'lib/application.js', 420, 436 ]
+363 silly gunzTarPerm extractEntry index.js
+364 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+365 silly gunzTarPerm extractEntry index.js
+366 silly gunzTarPerm extractEntry validator.min.js
+367 silly gunzTarPerm modified mode [ 'validator.min.js', 420, 436 ]
+368 silly gunzTarPerm extractEntry lib/express.js
+369 silly gunzTarPerm modified mode [ 'lib/express.js', 420, 436 ]
+370 silly gunzTarPerm extractEntry lib/middleware/init.js
+371 silly gunzTarPerm modified mode [ 'lib/middleware/init.js', 420, 436 ]
+372 silly gunzTarPerm extractEntry lib/middleware/query.js
+373 silly gunzTarPerm modified mode [ 'lib/middleware/query.js', 420, 436 ]
+374 silly gunzTarPerm extractEntry lib/simple_math.js
+375 silly gunzTarPerm modified mode [ 'lib/simple_math.js', 438, 436 ]
+376 silly gunzTarPerm extractEntry lib/auth_header.js
+377 silly gunzTarPerm modified mode [ 'lib/auth_header.js', 420, 436 ]
+378 silly gunzTarPerm extractEntry dist/README.md
+379 silly gunzTarPerm modified mode [ 'dist/README.md', 438, 436 ]
+380 silly gunzTarPerm extractEntry dist/bcrypt.js
+381 silly gunzTarPerm modified mode [ 'dist/bcrypt.js', 438, 436 ]
+382 silly gunzTarPerm extractEntry lib/index.js
+383 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+384 silly gunzTarPerm extractEntry README.md
+385 silly gunzTarPerm extractEntry lib/aggregate.js
+386 silly gunzTarPerm extractEntry lib/request.js
+387 silly gunzTarPerm modified mode [ 'lib/request.js', 420, 436 ]
+388 silly gunzTarPerm extractEntry lib/alpha.js
+389 silly gunzTarPerm modified mode [ 'lib/alpha.js', 420, 436 ]
+390 silly gunzTarPerm extractEntry lib/response.js
+391 silly gunzTarPerm modified mode [ 'lib/response.js', 420, 436 ]
+392 silly gunzTarPerm extractEntry lib/browser.js
+393 silly gunzTarPerm extractEntry lib/browserDocument.js
+394 silly gunzTarPerm extractEntry lib/extract_jwt.js
+395 silly gunzTarPerm modified mode [ 'lib/extract_jwt.js', 420, 436 ]
+396 silly gunzTarPerm extractEntry lib/helpers/assign.js
+397 silly gunzTarPerm modified mode [ 'lib/helpers/assign.js', 420, 436 ]
+398 silly gunzTarPerm extractEntry dist/bcrypt.min.js
+399 silly gunzTarPerm modified mode [ 'dist/bcrypt.min.js', 438, 436 ]
+400 silly gunzTarPerm extractEntry dist/bcrypt.min.js.gz
+401 silly gunzTarPerm modified mode [ 'dist/bcrypt.min.js.gz', 438, 436 ]
+402 silly gunzTarPerm extractEntry lib/sessionmanager.js
+403 silly gunzTarPerm modified mode [ 'lib/sessionmanager.js', 420, 436 ]
+404 silly gunzTarPerm extractEntry lib/errors/authenticationerror.js
+405 silly gunzTarPerm modified mode [ 'lib/errors/authenticationerror.js', 420, 436 ]
+406 silly gunzTarPerm extractEntry lib/cast.js
+407 silly gunzTarPerm extractEntry lib/cast/boolean.js
+408 silly gunzTarPerm extractEntry lib/blacklist.js
+409 silly gunzTarPerm modified mode [ 'lib/blacklist.js', 420, 436 ]
+410 silly gunzTarPerm extractEntry lib/contains.js
+411 silly gunzTarPerm modified mode [ 'lib/contains.js', 420, 436 ]
+412 silly gunzTarPerm extractEntry lib/router/index.js
+413 silly gunzTarPerm modified mode [ 'lib/router/index.js', 420, 436 ]
+414 silly gunzTarPerm extractEntry lib/router/layer.js
+415 silly gunzTarPerm modified mode [ 'lib/router/layer.js', 420, 436 ]
+416 silly gunzTarPerm extractEntry lib/cast/date.js
+417 silly gunzTarPerm extractEntry lib/cast/decimal128.js
+418 silly gunzTarPerm extractEntry lib/index.js
+419 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+420 silly gunzTarPerm extractEntry lib/strategy.js
+421 silly gunzTarPerm modified mode [ 'lib/strategy.js', 420, 436 ]
+422 silly gunzTarPerm extractEntry lib/framework/connect.js
+423 silly gunzTarPerm modified mode [ 'lib/framework/connect.js', 420, 436 ]
+424 silly gunzTarPerm extractEntry lib/http/request.js
+425 silly gunzTarPerm modified mode [ 'lib/http/request.js', 420, 436 ]
+426 silly gunzTarPerm extractEntry dist/bcrypt.min.map
+427 silly gunzTarPerm modified mode [ 'dist/bcrypt.min.map', 438, 436 ]
+428 silly gunzTarPerm extractEntry bin/bcrypt
+429 silly gunzTarPerm modified mode [ 'bin/bcrypt', 438, 436 ]
+430 silly gunzTarPerm extractEntry lib/cast/number.js
+431 silly gunzTarPerm extractEntry lib/cast/objectid.js
+432 silly gunzTarPerm extractEntry lib/equals.js
+433 silly gunzTarPerm modified mode [ 'lib/equals.js', 420, 436 ]
+434 silly gunzTarPerm extractEntry lib/escape.js
+435 silly gunzTarPerm modified mode [ 'lib/escape.js', 420, 436 ]
+436 silly gunzTarPerm extractEntry lib/isAfter.js
+437 silly gunzTarPerm modified mode [ 'lib/isAfter.js', 420, 436 ]
+438 silly gunzTarPerm extractEntry lib/router/route.js
+439 silly gunzTarPerm modified mode [ 'lib/router/route.js', 420, 436 ]
+440 silly gunzTarPerm extractEntry lib/utils.js
+441 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+442 silly gunzTarPerm extractEntry lib/cast/string.js
+443 silly gunzTarPerm extractEntry lib/isAlpha.js
+444 silly gunzTarPerm modified mode [ 'lib/isAlpha.js', 420, 436 ]
+445 silly gunzTarPerm extractEntry lib/collection.js
+446 silly gunzTarPerm extractEntry bower.json
+447 silly gunzTarPerm modified mode [ 'bower.json', 438, 436 ]
+448 silly gunzTarPerm extractEntry .vscode/settings.json
+449 silly gunzTarPerm modified mode [ '.vscode/settings.json', 438, 436 ]
+450 silly gunzTarPerm extractEntry lib/verify_jwt.js
+451 silly gunzTarPerm modified mode [ 'lib/verify_jwt.js', 420, 436 ]
+452 silly gunzTarPerm extractEntry test/auth_header-test.js
+453 silly gunzTarPerm modified mode [ 'test/auth_header-test.js', 420, 436 ]
+454 silly gunzTarPerm extractEntry lib/connection.js
+455 silly gunzTarPerm extractEntry lib/middleware/authenticate.js
+456 silly gunzTarPerm modified mode [ 'lib/middleware/authenticate.js', 420, 436 ]
+457 silly gunzTarPerm extractEntry lib/middleware/initialize.js
+458 silly gunzTarPerm modified mode [ 'lib/middleware/initialize.js', 420, 436 ]
+459 silly gunzTarPerm extractEntry lib/connectionstate.js
+460 silly gunzTarPerm extractEntry lib/cursor/AggregationCursor.js
+461 silly gunzTarPerm extractEntry lib/view.js
+462 silly gunzTarPerm modified mode [ 'lib/view.js', 420, 436 ]
+463 silly gunzTarPerm extractEntry lib/isAlphanumeric.js
+464 silly gunzTarPerm modified mode [ 'lib/isAlphanumeric.js', 420, 436 ]
+465 silly gunzTarPerm extractEntry lib/isAscii.js
+466 silly gunzTarPerm modified mode [ 'lib/isAscii.js', 420, 436 ]
+467 silly gunzTarPerm extractEntry lib/isBase64.js
+468 silly gunzTarPerm modified mode [ 'lib/isBase64.js', 420, 436 ]
+469 silly gunzTarPerm extractEntry lib/cursor/ChangeStream.js
+470 silly gunzTarPerm extractEntry lib/isBefore.js
+471 silly gunzTarPerm modified mode [ 'lib/isBefore.js', 420, 436 ]
+472 silly gunzTarPerm extractEntry lib/cursor/QueryCursor.js
+473 silly gunzTarPerm extractEntry lib/strategies/session.js
+474 silly gunzTarPerm modified mode [ 'lib/strategies/session.js', 420, 436 ]
+475 silly gunzTarPerm extractEntry lib/isBoolean.js
+476 silly gunzTarPerm modified mode [ 'lib/isBoolean.js', 420, 436 ]
+477 silly gunzTarPerm extractEntry test/bootstrap.js
+478 silly gunzTarPerm modified mode [ 'test/bootstrap.js', 420, 436 ]
+479 silly gunzTarPerm extractEntry test/extrators-test.js
+480 silly gunzTarPerm modified mode [ 'test/extrators-test.js', 420, 436 ]
+481 silly gunzTarPerm extractEntry lib/document_provider.js
+482 silly gunzTarPerm extractEntry externs/bcrypt.js
+483 silly gunzTarPerm modified mode [ 'externs/bcrypt.js', 438, 436 ]
+484 silly gunzTarPerm extractEntry externs/minimal-env.js
+485 silly gunzTarPerm modified mode [ 'externs/minimal-env.js', 438, 436 ]
+486 silly gunzTarPerm extractEntry src/bcrypt.js
+487 silly gunzTarPerm modified mode [ 'src/bcrypt.js', 438, 436 ]
+488 silly gunzTarPerm extractEntry lib/isByteLength.js
+489 silly gunzTarPerm modified mode [ 'lib/isByteLength.js', 420, 436 ]
+490 silly gunzTarPerm extractEntry lib/document.js
+491 silly gunzTarPerm extractEntry src/wrap.js
+492 silly gunzTarPerm modified mode [ 'src/wrap.js', 438, 436 ]
+493 silly gunzTarPerm extractEntry src/bcrypt/impl.js
+494 silly gunzTarPerm modified mode [ 'src/bcrypt/impl.js', 438, 436 ]
+495 silly gunzTarPerm extractEntry src/bcrypt/util.js
+496 silly gunzTarPerm modified mode [ 'src/bcrypt/util.js', 438, 436 ]
+497 silly gunzTarPerm extractEntry test/mock_request.js
+498 silly gunzTarPerm modified mode [ 'test/mock_request.js', 420, 436 ]
+499 silly gunzTarPerm extractEntry test/strategy-init-test.js
+500 silly gunzTarPerm modified mode [ 'test/strategy-init-test.js', 420, 436 ]
+501 silly gunzTarPerm extractEntry lib/driver.js
+502 silly gunzTarPerm extractEntry lib/drivers/browser/binary.js
+503 silly gentlyRm /home/tega/Events/node_modules/.staging/packagename-c1540208/node_modules is being purged
+504 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/packagename-c1540208/node_modules
+505 silly gunzTarPerm extractEntry lib/isCreditCard.js
+506 silly gunzTarPerm modified mode [ 'lib/isCreditCard.js', 420, 436 ]
+507 silly gunzTarPerm extractEntry lib/isCurrency.js
+508 silly gunzTarPerm modified mode [ 'lib/isCurrency.js', 420, 436 ]
+509 silly gunzTarPerm extractEntry lib/isDataURI.js
+510 silly gunzTarPerm modified mode [ 'lib/isDataURI.js', 420, 436 ]
+511 silly gunzTarPerm extractEntry lib/isDecimal.js
+512 silly gunzTarPerm modified mode [ 'lib/isDecimal.js', 420, 436 ]
+513 silly gunzTarPerm extractEntry src/bcrypt/prng/README.md
+514 silly gunzTarPerm modified mode [ 'src/bcrypt/prng/README.md', 438, 436 ]
+515 silly gunzTarPerm extractEntry src/bcrypt/prng/accum.js
+516 silly gunzTarPerm modified mode [ 'src/bcrypt/prng/accum.js', 438, 436 ]
+517 silly gunzTarPerm extractEntry src/bcrypt/prng/isaac.js
+518 silly gunzTarPerm modified mode [ 'src/bcrypt/prng/isaac.js', 438, 436 ]
+519 silly gunzTarPerm extractEntry lib/drivers/browser/decimal128.js
+520 silly gunzTarPerm extractEntry lib/drivers/browser/index.js
+521 silly gunzTarPerm extractEntry test/strategy-requests-test.js
+522 silly gunzTarPerm modified mode [ 'test/strategy-requests-test.js', 420, 436 ]
+523 silly gunzTarPerm extractEntry test/strategy-validation-test.js
+524 silly gunzTarPerm modified mode [ 'test/strategy-validation-test.js', 420, 436 ]
+525 silly gunzTarPerm extractEntry lib/isDivisibleBy.js
+526 silly gunzTarPerm modified mode [ 'lib/isDivisibleBy.js', 420, 436 ]
+527 silly gunzTarPerm extractEntry lib/isEmail.js
+528 silly gunzTarPerm modified mode [ 'lib/isEmail.js', 420, 436 ]
+529 silly gunzTarPerm extractEntry lib/drivers/browser/objectid.js
+530 silly gunzTarPerm extractEntry lib/drivers/browser/ReadPreference.js
+531 silly gunzTarPerm extractEntry src/bcrypt/util/base64.js
+532 silly gunzTarPerm modified mode [ 'src/bcrypt/util/base64.js', 438, 436 ]
+533 silly gunzTarPerm extractEntry src/bower.json
+534 silly gunzTarPerm modified mode [ 'src/bower.json', 438, 436 ]
+535 silly gunzTarPerm extractEntry test/strategy-verify-test.js
+536 silly gunzTarPerm modified mode [ 'test/strategy-verify-test.js', 420, 436 ]
+537 silly gunzTarPerm extractEntry test/testdata.js
+538 silly gunzTarPerm modified mode [ 'test/testdata.js', 420, 436 ]
+539 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/binary.js
+540 silly gunzTarPerm extractEntry lib/isEmpty.js
+541 silly gunzTarPerm modified mode [ 'lib/isEmpty.js', 420, 436 ]
+542 silly gunzTarPerm extractEntry lib/isFloat.js
+543 silly gunzTarPerm modified mode [ 'lib/isFloat.js', 420, 436 ]
+544 silly gunzTarPerm extractEntry .travis.yml
+545 silly gunzTarPerm modified mode [ '.travis.yml', 438, 436 ]
+546 silly gunzTarPerm extractEntry scripts/build.js
+547 silly gunzTarPerm modified mode [ 'scripts/build.js', 438, 436 ]
+548 silly gunzTarPerm extractEntry tests/suite.js
+549 silly gunzTarPerm modified mode [ 'tests/suite.js', 438, 436 ]
+550 silly gunzTarPerm extractEntry tests/quickbrown.txt
+551 silly gunzTarPerm modified mode [ 'tests/quickbrown.txt', 438, 436 ]
+552 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/collection.js
+553 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/connection.js
+554 silly gunzTarPerm extractEntry lib/isFQDN.js
+555 silly gunzTarPerm modified mode [ 'lib/isFQDN.js', 420, 436 ]
+556 silly gunzTarPerm extractEntry lib/isFullWidth.js
+557 silly gunzTarPerm modified mode [ 'lib/isFullWidth.js', 420, 436 ]
+558 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/decimal128.js
+559 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/index.js
+560 silly gunzTarPerm extractEntry lib/isHalfWidth.js
+561 silly gunzTarPerm modified mode [ 'lib/isHalfWidth.js', 420, 436 ]
+562 silly gunzTarPerm extractEntry lib/isHash.js
+563 silly gunzTarPerm modified mode [ 'lib/isHash.js', 420, 436 ]
+564 silly gentlyRm /home/tega/Events/node_modules/.staging/body-parser-4d1821d9/node_modules is being purged
+565 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/body-parser-4d1821d9/node_modules
+566 silly gunzTarPerm extractEntry lib/isHexadecimal.js
+567 silly gunzTarPerm modified mode [ 'lib/isHexadecimal.js', 420, 436 ]
+568 silly gunzTarPerm extractEntry lib/isHexColor.js
+569 silly gunzTarPerm modified mode [ 'lib/isHexColor.js', 420, 436 ]
+570 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/objectid.js
+571 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/ReadPreference.js
+572 silly gunzTarPerm extractEntry lib/drivers/SPEC.md
+573 silly gunzTarPerm extractEntry lib/error/browserMissingSchema.js
+574 silly gunzTarPerm extractEntry lib/isIdentityCard.js
+575 silly gunzTarPerm modified mode [ 'lib/isIdentityCard.js', 420, 436 ]
+576 silly gunzTarPerm extractEntry lib/isIn.js
+577 silly gunzTarPerm modified mode [ 'lib/isIn.js', 420, 436 ]
+578 silly gentlyRm /home/tega/Events/node_modules/.staging/jsonwebtoken-91161c72/node_modules is being purged
+579 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/jsonwebtoken-91161c72/node_modules
+580 silly gunzTarPerm extractEntry lib/isInt.js
+581 silly gunzTarPerm modified mode [ 'lib/isInt.js', 420, 436 ]
+582 silly gunzTarPerm extractEntry lib/isIP.js
+583 silly gunzTarPerm modified mode [ 'lib/isIP.js', 420, 436 ]
+584 silly gunzTarPerm extractEntry lib/error/cast.js
+585 silly gunzTarPerm extractEntry lib/error/disconnected.js
+586 silly gentlyRm /home/tega/Events/node_modules/.staging/passport-cf08ddd7/node_modules is being purged
+587 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/passport-cf08ddd7/node_modules
+588 silly gunzTarPerm extractEntry lib/isIPRange.js
+589 silly gunzTarPerm modified mode [ 'lib/isIPRange.js', 420, 436 ]
+590 silly gunzTarPerm extractEntry lib/isISBN.js
+591 silly gunzTarPerm modified mode [ 'lib/isISBN.js', 420, 436 ]
+592 silly gunzTarPerm extractEntry lib/error/divergentArray.js
+593 silly gunzTarPerm extractEntry lib/error/index.js
+594 silly gunzTarPerm extractEntry lib/isISIN.js
+595 silly gunzTarPerm modified mode [ 'lib/isISIN.js', 420, 436 ]
+596 silly gunzTarPerm extractEntry lib/isISO31661Alpha2.js
+597 silly gunzTarPerm modified mode [ 'lib/isISO31661Alpha2.js', 420, 436 ]
+598 silly gunzTarPerm extractEntry lib/error/messages.js
+599 silly gunzTarPerm extractEntry lib/error/missingSchema.js
+600 silly gunzTarPerm extractEntry lib/isISO31661Alpha3.js
+601 silly gunzTarPerm modified mode [ 'lib/isISO31661Alpha3.js', 420, 436 ]
+602 silly gunzTarPerm extractEntry lib/isISO8601.js
+603 silly gunzTarPerm modified mode [ 'lib/isISO8601.js', 420, 436 ]
+604 silly gunzTarPerm extractEntry lib/error/mongooseError.js
+605 silly gunzTarPerm extractEntry lib/error/notFound.js
+606 silly gunzTarPerm extractEntry lib/isISRC.js
+607 silly gunzTarPerm modified mode [ 'lib/isISRC.js', 420, 436 ]
+608 silly gunzTarPerm extractEntry lib/isISSN.js
+609 silly gunzTarPerm modified mode [ 'lib/isISSN.js', 420, 436 ]
+610 silly gunzTarPerm extractEntry lib/error/objectExpected.js
+611 silly gunzTarPerm extractEntry lib/error/objectParameter.js
+612 silly gentlyRm /home/tega/Events/node_modules/.staging/express-cc07b4ca/node_modules is being purged
+613 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/express-cc07b4ca/node_modules
+614 silly gunzTarPerm extractEntry lib/isJSON.js
+615 silly gunzTarPerm modified mode [ 'lib/isJSON.js', 420, 436 ]
+616 silly gunzTarPerm extractEntry lib/isJWT.js
+617 silly gunzTarPerm modified mode [ 'lib/isJWT.js', 420, 436 ]
+618 silly gunzTarPerm extractEntry lib/error/overwriteModel.js
+619 silly gunzTarPerm extractEntry lib/error/parallelSave.js
+620 silly gunzTarPerm extractEntry lib/isLatLong.js
+621 silly gunzTarPerm modified mode [ 'lib/isLatLong.js', 420, 436 ]
+622 silly gunzTarPerm extractEntry lib/isLength.js
+623 silly gunzTarPerm modified mode [ 'lib/isLength.js', 420, 436 ]
+624 silly gunzTarPerm extractEntry lib/error/strict.js
+625 silly gunzTarPerm extractEntry lib/error/validation.js
+626 silly gunzTarPerm extractEntry lib/error/validator.js
+627 silly gunzTarPerm extractEntry lib/error/version.js
+628 silly gentlyRm /home/tega/Events/node_modules/.staging/passport-jwt-60a34e5b/node_modules is being purged
+629 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/passport-jwt-60a34e5b/node_modules
+630 silly gunzTarPerm extractEntry lib/isLowercase.js
+631 silly gunzTarPerm modified mode [ 'lib/isLowercase.js', 420, 436 ]
+632 silly gunzTarPerm extractEntry lib/isMACAddress.js
+633 silly gunzTarPerm modified mode [ 'lib/isMACAddress.js', 420, 436 ]
+634 silly gunzTarPerm extractEntry lib/helpers/common.js
+635 silly gunzTarPerm extractEntry lib/helpers/cursor/eachAsync.js
+636 silly gunzTarPerm extractEntry lib/isMagnetURI.js
+637 silly gunzTarPerm modified mode [ 'lib/isMagnetURI.js', 420, 436 ]
+638 silly gunzTarPerm extractEntry lib/isMD5.js
+639 silly gunzTarPerm modified mode [ 'lib/isMD5.js', 420, 436 ]
+640 silly gunzTarPerm extractEntry lib/helpers/document/cleanModifiedSubpaths.js
+641 silly gunzTarPerm extractEntry lib/helpers/document/compile.js
+642 silly gunzTarPerm extractEntry lib/isMimeType.js
+643 silly gunzTarPerm modified mode [ 'lib/isMimeType.js', 420, 436 ]
+644 silly gunzTarPerm extractEntry lib/isMobilePhone.js
+645 silly gunzTarPerm modified mode [ 'lib/isMobilePhone.js', 420, 436 ]
+646 silly gunzTarPerm extractEntry lib/helpers/document/getEmbeddedDiscriminatorPath.js
+647 silly gunzTarPerm extractEntry lib/helpers/get.js
+648 silly gunzTarPerm extractEntry lib/isMongoId.js
+649 silly gunzTarPerm modified mode [ 'lib/isMongoId.js', 420, 436 ]
+650 silly gunzTarPerm extractEntry lib/isMultibyte.js
+651 silly gunzTarPerm modified mode [ 'lib/isMultibyte.js', 420, 436 ]
+652 silly gunzTarPerm extractEntry lib/helpers/immediate.js
+653 silly gunzTarPerm extractEntry lib/helpers/model/applyHooks.js
+654 silly gunzTarPerm extractEntry lib/isNumeric.js
+655 silly gunzTarPerm modified mode [ 'lib/isNumeric.js', 420, 436 ]
+656 silly gunzTarPerm extractEntry lib/isPort.js
+657 silly gunzTarPerm modified mode [ 'lib/isPort.js', 420, 436 ]
+658 silly gunzTarPerm extractEntry lib/helpers/model/applyMethods.js
+659 silly gunzTarPerm extractEntry lib/helpers/model/applyStatics.js
+660 silly gunzTarPerm extractEntry lib/isPostalCode.js
+661 silly gunzTarPerm modified mode [ 'lib/isPostalCode.js', 420, 436 ]
+662 silly gunzTarPerm extractEntry lib/isRFC3339.js
+663 silly gunzTarPerm modified mode [ 'lib/isRFC3339.js', 420, 436 ]
+664 silly gunzTarPerm extractEntry lib/helpers/model/castBulkWrite.js
+665 silly gunzTarPerm extractEntry lib/helpers/model/discriminator.js
+666 silly gunzTarPerm extractEntry lib/helpers/once.js
+667 silly gunzTarPerm extractEntry lib/helpers/populate/assignRawDocsToIdStructure.js
+668 silly gunzTarPerm extractEntry lib/isSurrogatePair.js
+669 silly gunzTarPerm modified mode [ 'lib/isSurrogatePair.js', 420, 436 ]
+670 silly gunzTarPerm extractEntry lib/isUppercase.js
+671 silly gunzTarPerm modified mode [ 'lib/isUppercase.js', 420, 436 ]
+672 silly gunzTarPerm extractEntry lib/helpers/populate/getSchemaTypes.js
+673 silly gunzTarPerm extractEntry lib/helpers/populate/getVirtual.js
+674 silly gunzTarPerm extractEntry lib/helpers/populate/leanPopulateMap.js
+675 silly gunzTarPerm extractEntry lib/isURL.js
+676 silly gunzTarPerm modified mode [ 'lib/isURL.js', 420, 436 ]
+677 silly gunzTarPerm extractEntry lib/isUUID.js
+678 silly gunzTarPerm modified mode [ 'lib/isUUID.js', 420, 436 ]
+679 silly gunzTarPerm extractEntry lib/helpers/populate/normalizeRefPath.js
+680 silly gunzTarPerm extractEntry lib/helpers/populate/validateRef.js
+681 silly gunzTarPerm extractEntry lib/isVariableWidth.js
+682 silly gunzTarPerm modified mode [ 'lib/isVariableWidth.js', 420, 436 ]
+683 silly gunzTarPerm extractEntry lib/isWhitelisted.js
+684 silly gunzTarPerm modified mode [ 'lib/isWhitelisted.js', 420, 436 ]
+685 silly gunzTarPerm extractEntry lib/helpers/printJestWarning.js
+686 silly gunzTarPerm extractEntry lib/helpers/projection/isDefiningProjection.js
+687 silly gunzTarPerm extractEntry lib/ltrim.js
+688 silly gunzTarPerm modified mode [ 'lib/ltrim.js', 420, 436 ]
+689 silly gunzTarPerm extractEntry lib/matches.js
+690 silly gunzTarPerm modified mode [ 'lib/matches.js', 420, 436 ]
+691 silly gunzTarPerm extractEntry lib/helpers/projection/isExclusive.js
+692 silly gunzTarPerm extractEntry lib/helpers/projection/isInclusive.js
+693 silly gunzTarPerm extractEntry lib/normalizeEmail.js
+694 silly gunzTarPerm modified mode [ 'lib/normalizeEmail.js', 420, 436 ]
+695 silly gunzTarPerm extractEntry lib/rtrim.js
+696 silly gunzTarPerm modified mode [ 'lib/rtrim.js', 420, 436 ]
+697 silly gentlyRm /home/tega/Events/node_modules/.staging/bcryptjs-24de31fb/node_modules is being purged
+698 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/bcryptjs-24de31fb/node_modules
+699 silly gunzTarPerm extractEntry lib/helpers/projection/isPathExcluded.js
+700 silly gunzTarPerm extractEntry lib/helpers/projection/isPathSelectedInclusive.js
+701 silly gunzTarPerm extractEntry lib/stripLow.js
+702 silly gunzTarPerm modified mode [ 'lib/stripLow.js', 420, 436 ]
+703 silly gunzTarPerm extractEntry lib/toBoolean.js
+704 silly gunzTarPerm modified mode [ 'lib/toBoolean.js', 420, 436 ]
+705 silly gunzTarPerm extractEntry lib/helpers/query/applyQueryMiddleware.js
+706 silly gunzTarPerm extractEntry lib/helpers/query/castFilterPath.js
+707 silly gunzTarPerm extractEntry lib/toDate.js
+708 silly gunzTarPerm modified mode [ 'lib/toDate.js', 420, 436 ]
+709 silly gunzTarPerm extractEntry lib/toFloat.js
+710 silly gunzTarPerm modified mode [ 'lib/toFloat.js', 420, 436 ]
+711 silly gunzTarPerm extractEntry lib/helpers/query/castUpdate.js
+712 silly gunzTarPerm extractEntry lib/helpers/query/completeMany.js
+713 silly gunzTarPerm extractEntry lib/toInt.js
+714 silly gunzTarPerm modified mode [ 'lib/toInt.js', 420, 436 ]
+715 silly gunzTarPerm extractEntry lib/trim.js
+716 silly gunzTarPerm modified mode [ 'lib/trim.js', 420, 436 ]
+717 silly gunzTarPerm extractEntry lib/helpers/query/getEmbeddedDiscriminatorPath.js
+718 silly gunzTarPerm extractEntry lib/helpers/query/hasDollarKeys.js
+719 silly gunzTarPerm extractEntry lib/unescape.js
+720 silly gunzTarPerm modified mode [ 'lib/unescape.js', 420, 436 ]
+721 silly gunzTarPerm extractEntry lib/util/assertString.js
+722 silly gunzTarPerm modified mode [ 'lib/util/assertString.js', 420, 436 ]
+723 silly gunzTarPerm extractEntry lib/helpers/query/selectPopulatedFields.js
+724 silly gunzTarPerm extractEntry lib/helpers/query/wrapThunk.js
+725 silly gunzTarPerm extractEntry lib/util/includes.js
+726 silly gunzTarPerm modified mode [ 'lib/util/includes.js', 420, 436 ]
+727 silly gunzTarPerm extractEntry lib/util/merge.js
+728 silly gunzTarPerm modified mode [ 'lib/util/merge.js', 420, 436 ]
+729 silly gunzTarPerm extractEntry lib/helpers/schema/applyWriteConcern.js
+730 silly gunzTarPerm extractEntry lib/helpers/schema/cleanPositionalOperators.js
+731 silly gunzTarPerm extractEntry lib/util/toString.js
+732 silly gunzTarPerm modified mode [ 'lib/util/toString.js', 420, 436 ]
+733 silly gunzTarPerm extractEntry lib/whitelist.js
+734 silly gunzTarPerm modified mode [ 'lib/whitelist.js', 420, 436 ]
+735 silly gunzTarPerm extractEntry lib/helpers/schema/getIndexes.js
+736 silly gunzTarPerm extractEntry lib/helpers/schema/handleTimestampOption.js
+737 silly gunzTarPerm extractEntry lib/helpers/schema/merge.js
+738 silly gunzTarPerm extractEntry lib/helpers/schema/setParentPointers.js
+739 silly gunzTarPerm extractEntry lib/helpers/setDefaultsOnInsert.js
+740 silly gunzTarPerm extractEntry lib/helpers/symbols.js
+741 silly gunzTarPerm extractEntry lib/helpers/update/applyTimestampsToChildren.js
+742 silly gunzTarPerm extractEntry lib/helpers/update/applyTimestampsToUpdate.js
+743 silly gunzTarPerm extractEntry lib/helpers/update/castArrayFilters.js
+744 silly gunzTarPerm extractEntry lib/helpers/update/modifiedPaths.js
+745 silly gunzTarPerm extractEntry lib/helpers/updateValidators.js
+746 silly gunzTarPerm extractEntry lib/index.js
+747 silly gunzTarPerm extractEntry lib/internal.js
+748 silly gunzTarPerm extractEntry lib/model.js
+749 silly gunzTarPerm extractEntry lib/options.js
+750 silly gunzTarPerm extractEntry lib/plugins/idGetter.js
+751 silly gunzTarPerm extractEntry lib/plugins/removeSubdocs.js
+752 silly gunzTarPerm extractEntry lib/plugins/saveSubdocs.js
+753 silly gunzTarPerm extractEntry lib/plugins/sharding.js
+754 silly gunzTarPerm extractEntry lib/plugins/validateBeforeSave.js
+755 silly gunzTarPerm extractEntry lib/promise_provider.js
+756 silly gunzTarPerm extractEntry lib/query.js
+757 silly gunzTarPerm extractEntry lib/queryhelpers.js
+758 silly gunzTarPerm extractEntry lib/schema.js
+759 silly gunzTarPerm extractEntry lib/schema/array.js
+760 silly gunzTarPerm extractEntry lib/schema/boolean.js
+761 silly gunzTarPerm extractEntry lib/schema/buffer.js
+762 silly gunzTarPerm extractEntry lib/schema/date.js
+763 silly gunzTarPerm extractEntry lib/schema/decimal128.js
+764 silly gunzTarPerm extractEntry lib/schema/documentarray.js
+765 silly gunzTarPerm extractEntry lib/schema/embedded.js
+766 silly gunzTarPerm extractEntry lib/schema/index.js
+767 silly gunzTarPerm extractEntry lib/schema/map.js
+768 silly gunzTarPerm extractEntry lib/schema/mixed.js
+769 silly gunzTarPerm extractEntry lib/schema/number.js
+770 silly gunzTarPerm extractEntry lib/schema/objectid.js
+771 silly gunzTarPerm extractEntry lib/schema/operators/bitwise.js
+772 silly gunzTarPerm extractEntry lib/schema/operators/exists.js
+773 silly gunzTarPerm extractEntry lib/schema/operators/geospatial.js
+774 silly gunzTarPerm extractEntry lib/schema/operators/helpers.js
+775 silly gunzTarPerm extractEntry lib/schema/operators/text.js
+776 silly gunzTarPerm extractEntry lib/schema/operators/type.js
+777 silly gunzTarPerm extractEntry lib/schema/string.js
+778 silly gunzTarPerm extractEntry lib/schema/symbols.js
+779 silly gunzTarPerm extractEntry lib/schematype.js
+780 silly gunzTarPerm extractEntry lib/statemachine.js
+781 silly gunzTarPerm extractEntry lib/types/array.js
+782 silly gunzTarPerm extractEntry lib/types/buffer.js
+783 silly gunzTarPerm extractEntry lib/types/decimal128.js
+784 silly gunzTarPerm extractEntry lib/types/documentarray.js
+785 silly gunzTarPerm extractEntry lib/types/embedded.js
+786 silly gunzTarPerm extractEntry lib/types/index.js
+787 silly gunzTarPerm extractEntry lib/types/map.js
+788 silly gunzTarPerm extractEntry lib/types/objectid.js
+789 silly gunzTarPerm extractEntry lib/types/subdocument.js
+790 silly gunzTarPerm extractEntry lib/utils.js
+791 silly gunzTarPerm extractEntry lib/virtualtype.js
+792 silly gunzTarPerm extractEntry tools/auth.js
+793 silly gunzTarPerm extractEntry tools/repl.js
+794 silly gunzTarPerm extractEntry tools/sharded.js
+795 silly gentlyRm /home/tega/Events/node_modules/.staging/validator-3c390a83/node_modules is being purged
+796 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/validator-3c390a83/node_modules
+797 silly gentlyRm /home/tega/Events/node_modules/.staging/mongoose-31036976/node_modules is being purged
+798 verbose gentlyRm don't care about contents; nuking /home/tega/Events/node_modules/.staging/mongoose-31036976/node_modules
+799 silly doParallel preinstall 9
+800 silly preinstall body-parser@1.18.3 /home/tega/Events/node_modules/.staging/body-parser-4d1821d9
+801 info lifecycle body-parser@1.18.3~preinstall: body-parser@1.18.3
+802 silly preinstall jsonwebtoken@8.5.0 /home/tega/Events/node_modules/.staging/jsonwebtoken-91161c72
+803 info lifecycle jsonwebtoken@8.5.0~preinstall: jsonwebtoken@8.5.0
+804 silly preinstall bcryptjs@2.4.3 /home/tega/Events/node_modules/.staging/bcryptjs-24de31fb
+805 info lifecycle bcryptjs@2.4.3~preinstall: bcryptjs@2.4.3
+806 silly preinstall express@4.16.4 /home/tega/Events/node_modules/.staging/express-cc07b4ca
+807 info lifecycle express@4.16.4~preinstall: express@4.16.4
+808 silly preinstall mongoose@5.4.17 /home/tega/Events/node_modules/.staging/mongoose-31036976
+809 info lifecycle mongoose@5.4.17~preinstall: mongoose@5.4.17
+810 silly preinstall packagename@2.0.1 /home/tega/Events/node_modules/.staging/packagename-c1540208
+811 info lifecycle packagename@2.0.1~preinstall: packagename@2.0.1
+812 silly preinstall passport@0.4.0 /home/tega/Events/node_modules/.staging/passport-cf08ddd7
+813 info lifecycle passport@0.4.0~preinstall: passport@0.4.0
+814 silly preinstall passport-jwt@4.0.0 /home/tega/Events/node_modules/.staging/passport-jwt-60a34e5b
+815 info lifecycle passport-jwt@4.0.0~preinstall: passport-jwt@4.0.0
+816 silly preinstall validator@10.11.0 /home/tega/Events/node_modules/.staging/validator-3c390a83
+817 info lifecycle validator@10.11.0~preinstall: validator@10.11.0
+818 silly lifecycle body-parser@1.18.3~preinstall: no script for preinstall, continuing
+819 silly lifecycle jsonwebtoken@8.5.0~preinstall: no script for preinstall, continuing
+820 silly lifecycle bcryptjs@2.4.3~preinstall: no script for preinstall, continuing
+821 silly lifecycle express@4.16.4~preinstall: no script for preinstall, continuing
+822 silly lifecycle mongoose@5.4.17~preinstall: no script for preinstall, continuing
+823 silly lifecycle packagename@2.0.1~preinstall: no script for preinstall, continuing
+824 silly lifecycle passport@0.4.0~preinstall: no script for preinstall, continuing
+825 silly lifecycle passport-jwt@4.0.0~preinstall: no script for preinstall, continuing
+826 silly lifecycle validator@10.11.0~preinstall: no script for preinstall, continuing
+827 silly doReverseSerial remove 0
+828 silly doSerial move 0
+829 silly doSerial finalize 9
+830 silly finalize /home/tega/Events/node_modules/body-parser
+831 silly finalize /home/tega/Events/node_modules/jsonwebtoken
+832 silly finalize /home/tega/Events/node_modules/bcryptjs
+833 silly finalize /home/tega/Events/node_modules/express
+834 silly finalize /home/tega/Events/node_modules/mongoose
+835 silly finalize /home/tega/Events/node_modules/packagename
+836 silly finalize /home/tega/Events/node_modules/passport
+837 silly finalize /home/tega/Events/node_modules/passport-jwt
+838 silly finalize /home/tega/Events/node_modules/validator
+839 silly doSerial build 9
+840 silly build body-parser@1.18.3
+841 info linkStuff body-parser@1.18.3
+842 silly linkStuff body-parser@1.18.3 has /home/tega/Events/node_modules as its parent node_modules
+843 verbose linkBins body-parser@1.18.3
+844 verbose linkMans body-parser@1.18.3
+845 silly build jsonwebtoken@8.5.0
+846 info linkStuff jsonwebtoken@8.5.0
+847 silly linkStuff jsonwebtoken@8.5.0 has /home/tega/Events/node_modules as its parent node_modules
+848 verbose linkBins jsonwebtoken@8.5.0
+849 verbose linkMans jsonwebtoken@8.5.0
+850 silly build bcryptjs@2.4.3
+851 info linkStuff bcryptjs@2.4.3
+852 silly linkStuff bcryptjs@2.4.3 has /home/tega/Events/node_modules as its parent node_modules
+853 verbose linkBins bcryptjs@2.4.3
+854 verbose linkMans bcryptjs@2.4.3
+855 silly build express@4.16.4
+856 info linkStuff express@4.16.4
+857 silly linkStuff express@4.16.4 has /home/tega/Events/node_modules as its parent node_modules
+858 verbose linkBins express@4.16.4
+859 verbose linkMans express@4.16.4
+860 silly build mongoose@5.4.17
+861 info linkStuff mongoose@5.4.17
+862 silly linkStuff mongoose@5.4.17 has /home/tega/Events/node_modules as its parent node_modules
+863 verbose linkBins mongoose@5.4.17
+864 verbose linkMans mongoose@5.4.17
+865 silly build packagename@2.0.1
+866 info linkStuff packagename@2.0.1
+867 silly linkStuff packagename@2.0.1 has /home/tega/Events/node_modules as its parent node_modules
+868 verbose linkBins packagename@2.0.1
+869 verbose link bins [ { maths: 'main.js' },
+869 verbose link bins   '/home/tega/Events/node_modules/.bin',
+869 verbose link bins   false ]
+870 verbose linkMans packagename@2.0.1
+871 verbose unlock done using /home/tega/.npm/_locks/staging-78ae4b0ae8015242.lock for /home/tega/Events/node_modules/.staging
+872 silly rollbackFailedOptional Starting
+873 silly rollbackFailedOptional Finishing
+874 silly runTopLevelLifecycles Starting
+875 silly runTopLevelLifecycles Finishing
+876 silly install printInstalled
+877 warn optional Skipping failed optional dependency /chokidar/fsevents:
+878 warn notsup Not compatible with your operating system or architecture: fsevents@1.2.7
+879 verbose stack Error: ENOENT: no such file or directory, chmod '/home/tega/Events/node_modules/packagename/main.js'
+880 verbose cwd /home/tega/Events
+881 error Linux 4.15.0-45-generic
+882 error argv "/usr/bin/node" "/usr/bin/npm" "install" "packagename" "--save"
+883 error node v8.10.0
+884 error npm  v3.5.2
+885 error path /home/tega/Events/node_modules/packagename/main.js
+886 error code ENOENT
+887 error errno -2
+888 error syscall chmod
+889 error enoent ENOENT: no such file or directory, chmod '/home/tega/Events/node_modules/packagename/main.js'
+890 error enoent ENOENT: no such file or directory, chmod '/home/tega/Events/node_modules/packagename/main.js'
+890 error enoent This is most likely not a problem with npm itself
+890 error enoent and is related to npm not being able to find a file.
+891 verbose exit [ -2, true ]
