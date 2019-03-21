@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-const multer = require('multer');
 const users = require('./routes/api/users');
 const profile = require('./routes/api/profile');
 const posts = require('./routes/api/posts');
@@ -16,6 +15,7 @@ const db = require('./config/keys').mongoURI;
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+
 // Connect to MongoDB
 mongoose
   .connect(db, {
@@ -25,12 +25,6 @@ mongoose
   .catch(err => console.log(err));
 
 app.get('/', (req, res) => res.send('Hello World'));
-
-app.use(multer({dest: './uploads/',
-  rename: function (fieldname, filename){
-    return filename;
-  },
-}));
 
 // Use Routes
 app.use('/api/users', users);

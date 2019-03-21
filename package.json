@@ -14,5 +14,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "multer-storage-cloudinary": "^2.2.1"
   }
 }
