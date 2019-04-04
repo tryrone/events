@@ -3,7 +3,6 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const multer = require("multer");
 const path = require("path");
-const fs = require("fs");
 
 //importing the User model
 const User = require("../../models/User");
