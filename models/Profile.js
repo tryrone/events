@@ -8,28 +8,22 @@ const ProfileSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "users"
   },
+  name: {
+    type: String,
+    required: true
+  },
   website: {
     type: String
   },
-  location: {
+  blog: {
+    type: String
+  },
+  address: {
     type: String
   },
   bio: {
-    type: String
-  },
-  from: {
-    type: Date,
+    type: String,
     required: true
-  },
-  to: {
-    type: Date
-  },
-  current: {
-    type: Boolean,
-    default: false
-  },
-  description: {
-    type: String
   },
   social: {
     youtube: {

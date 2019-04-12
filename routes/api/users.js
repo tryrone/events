@@ -99,9 +99,9 @@ function checkFileType(file, cb) {
   }
 }
 
-// @route   GET api/users/avatar
-// @desc    Tests users route
-// @access  Public
+// @route   POST api/users/avatar
+// @desc    Uplaod avatar for profile image
+// @access  Private
 router.post("/avatar", (req, res) => {
   upload(req, res, err => {
     if (err) {
@@ -123,6 +123,16 @@ router.post("/avatar", (req, res) => {
       }
     }
   });
+});
+
+// @route   GET api/users/avatar
+// @desc    Gets avatar for peoples profile
+// @access  Private
+router.get("/avatar", (req, res) => {
+  Avatar.find()
+    .sort({ date: -1 })
+    .then(image => res.json(image))
+    .catch(err => res.json(err));
 });
 
 // @route   GET api/users/login
