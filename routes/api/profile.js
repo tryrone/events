@@ -27,6 +27,7 @@ router.get(
     const errors = {};
 
     Profile.findOne({ user: req.user.id })
+      .populate("user", ["avatar", "path"])
       .then(profile => {
         if (!profile) {
           errors.noprofile = "No profile found for this user";
