@@ -130,7 +130,7 @@ router.post("/avatar", (req, res) => {
 // @access  Private
 router.get("/avatar", (req, res) => {
   Avatar.find()
-    .sort({ date: -1 })
+    .sort({ id: User.id, date: -1 })
     .then(image => res.json(image))
     .catch(err => res.json(err));
 });
