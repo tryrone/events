@@ -6,6 +6,9 @@ const passport = require("passport");
 //Load Profile model
 const Profile = require("../../models/Profile");
 
+//Load Event model
+const Event = require("../../models/Event");
+
 //Load User model
 const User = require("../../models/User");
 
@@ -81,5 +84,30 @@ router.post(
     });
   }
 );
+// @route   DELETE api/profile
+// @desc    Delete user and profile
+// @access  Private
+router.delete(
+  "/",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    const errors = {};
 
+    Event.findOne({ id: req.user.id })
+      .then(event => {
+        if (event) {
+          errors.event = "You have to delete your events first";
+          res.json(errors);
+        }
+      })
+      .catch(err => res.json(err))
+      .then(
+        Profile.findOneAndRemove({ user: req.user.id }).then(() => {
+          User.findOneAndRemove({ _id: req.user.id }).then(() =>
+            res.json({ success: true })
+          );
+        })
+      );
+  }
+);
 module.exports = router;

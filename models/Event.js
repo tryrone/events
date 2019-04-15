@@ -7,16 +7,13 @@ const EventSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "users"
   },
-  description: {
+  handle: {
     type: String,
     required: true
   },
-  name: {
-    type: String
-  },
-  image: {
-    data: Buffer,
-    contentType: String
+  description: {
+    type: String,
+    required: true
   },
   likes: [
     {
@@ -31,42 +28,34 @@ const EventSchema = new Schema({
     required: true
   },
   starts: {
-    type: Date,
-    hour: {
-      type: Date.getHours(),
-      required: true
-    },
-    minutes: {
-      type: Date.getMinutes()
-    },
+    type: String,
     required: true
   },
   ends: {
-    type: Date,
-    hour: {
-      type: Date.getHours(),
+    type: String
+  },
+  dateofevent: {
+    type: String,
+    required: true
+  },
+  tickets: {
+    ticketname: {
+      type: String,
       required: true
     },
-    minutes: {
-      type: Date.getMinutes()
+    type: {
+      type: String,
+      required: true
+    },
+    quantity: {
+      type: Number,
+      required: true
     }
   },
-  tickets: [
-    {
-      name: {
-        type: String,
-        required: true
-      },
-      type: {
-        type: String,
-        required: true
-      },
-      quantity: {
-        type: Number,
-        required: true
-      }
-    }
-  ],
+  count: {
+    type: Number,
+    default: 0
+  },
   date: {
     type: Date,
     default: Date.now
