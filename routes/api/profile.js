@@ -93,7 +93,7 @@ router.delete(
   (req, res) => {
     const errors = {};
 
-    Event.findOne({ id: req.user.id })
+    Event.findOne({ user: req.user.id })
       .then(event => {
         if (event) {
           errors.event = "You have to delete your events first";
