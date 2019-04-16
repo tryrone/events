@@ -1,5 +1,5 @@
 {
-  "name": "event",
+  "name": "client",
   "version": "1.0.0",
   "description": "connect people together",
   "main": "Server.js",
