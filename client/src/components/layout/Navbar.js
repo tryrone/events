@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import M from "materialize-css";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   componentDidMount() {
@@ -10,35 +11,40 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav>
-          <div className="nav-wrapper grey lighten-5">
-            <a href="#!" id="country" className="brand-logo ">
-              Logo
-            </a>
+        <nav className="red accent-3">
+          <div className="nav-wrapper indigo darken-1" id="nav">
+            <Link
+              to="/"
+              id="country"
+              className="brand-logo "
+              style={{ marginLeft: "-91px" }}
+            >
+              EVENTS
+            </Link>
             <a
               href="dffdf"
               data-target="mobile-demo"
               className="sidenav-trigger"
             >
               <i id="country" className="material-icons">
-                menu
+                :
               </i>
             </a>
             <ul className="right hide-on-med-and-down" id="adjust">
               <li>
-                <a href="sass.html" id="country">
+                <Link to="/events" class="position" id="country">
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="badges.html" id="country">
+                <Link to="/register" id="country">
                   Sign up
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="collapsible.html" id="country">
+                <Link to="/login" id="country">
                   Login
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -46,16 +52,16 @@ class Navbar extends Component {
 
         <ul className="sidenav" id="mobile-demo">
           <li>
-            <a href="sass.html">Sass</a>
+            <Link to="/events">Events</Link>
           </li>
           <li>
-            <a href="badges.html">Components</a>
+            <Link to="badges.html">Components</Link>
           </li>
           <li>
-            <a href="collapsible.html">Javascript</a>
+            <Link to="collapsible.html">Javascript</Link>
           </li>
           <li>
-            <a href="mobile.html">Mobile</a>
+            <Link to="mobile.html">Mobile</Link>
           </li>
         </ul>
       </div>

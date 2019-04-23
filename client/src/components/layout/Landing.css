@@ -1,0 +1,28 @@
+#pic {
+  margin-top: 0px;
+  margin: 0px;
+
+  background-image: url("./hero1.jpeg");
+  height: 800px;
+  width: auto;
+  opacity: 0.8;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+.centered {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+#black {
+  color: black;
+}
